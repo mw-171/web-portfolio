@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         </a>
         <div className="font-semibold "><code>under construction...</code></div>
       </header>
+
+      <Footer />
     </div>
   );
 }
