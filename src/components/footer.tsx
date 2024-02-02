@@ -11,10 +11,12 @@ import {
     faInstagram,
     faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-
+import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react'
   
   export default function Footer() {
+    const router = useRouter();
+
     return (
       <footer className="bg-white">
         <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
