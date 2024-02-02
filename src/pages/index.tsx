@@ -19,13 +19,16 @@
 // reportWebVitals();
 // pages/index.tsx
 import React from 'react';
-//import Footer from '../components/footer';
+import Footer from '../components/footer';
+//import '../styles/global.css';
 
 export default function Home() {
   return (
     <div>
-      {/* <Footer /> */}
+      
       <h1>Welcome to Next.js with TypeScript!</h1>
+      <Footer />
+
     </div>
   );
 };

@@ -13,7 +13,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react'
-  
+import Link from 'next/link';
+
   export default function Footer() {
     const router = useRouter();
 
@@ -24,9 +25,12 @@ import { useState, useEffect } from 'react'
             <div className="pb-6">
                 <a href="" className="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
             </div>
-            <div className="pb-6">
-                <a href="" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Portfolio</a>
-            </div>
+            <Link href={'/portfolio'}>
+                <div className="pb-6">
+                    <div className="text-sm leading-6 text-gray-600 hover:text-gray-900">Portfolio</div>
+                </div>
+            </Link>
+            
             <div className="pb-6">
                 <a href="" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Contact</a>
             </div>
