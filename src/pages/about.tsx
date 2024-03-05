@@ -4,6 +4,7 @@ export default function About() {
       <p className="font-bold flex justify-center items-center text-5xl">
         About me
       </p>
+      {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
     </div>
   );
 }

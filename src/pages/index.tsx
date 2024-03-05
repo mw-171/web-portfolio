@@ -31,7 +31,7 @@ const navigation = [
 ];
 
 //import '../styles/global.css';
-
+//TODO: add experience section to bottom before footer
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
