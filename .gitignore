@@ -2,6 +2,8 @@
 
 .next/
 
+.next/cache
+
 *.tsbuildinfo
 
 # dependencies
@@ -75,3 +77,4 @@ Thumbs.db
 *.wmv
 
 .vercel
+
