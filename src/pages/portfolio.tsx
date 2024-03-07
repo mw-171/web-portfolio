@@ -1,3 +1,5 @@
+//TODO: make everything look cooler, rounded edges, slight shadow, hover effect and click into component, etc.
+
 export default function Portfolio() {
   const images = [
     { src: "/blue.jpeg", alt: "hey" },
