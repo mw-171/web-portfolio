@@ -2,7 +2,7 @@
 
 export default function Portfolio() {
   const images = [
-    { src: "/blue.jpeg", alt: "hey" },
+    { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
     { src: "/uncle.jpg", alt: "hey" },
     { src: "/gold.jpeg", alt: "hey" },
     { src: "/red.jpeg", alt: "hey" },
