@@ -3,7 +3,7 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
 export default function Portfolio() {
   const images = [
-    { src: "/blue.jpeg", alt: "hey", title: "butterflies", href: "/blue" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
+    { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
     { src: "/uncle.jpg", alt: "hey" },
     { src: "/gold.jpeg", alt: "hey" },
     { src: "/red.jpeg", alt: "hey" },
@@ -65,7 +65,9 @@ export default function Portfolio() {
                 )
                 .map((image, index) => (
                   <div key={index} className="mb-4 relative active:bg-black">
-                    <a href={image.href}>
+                    <a
+                      href={`/portfolio/${encodeURIComponent(image.title || "untitled")}`}
+                    >
                       <img
                         src={image.src}
                         alt={image.alt}
