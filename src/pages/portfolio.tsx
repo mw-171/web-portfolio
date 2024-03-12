@@ -64,16 +64,16 @@ export default function Portfolio() {
                   (columnIndex + 1) * imagesPerColumn
                 )
                 .map((image, index) => (
-                  <div
-                    key={index}
-                    className="mb-4 hover:bg-gray-900 active:bg-black"
-                  >
+                  <div key={index} className="mb-4 relative active:bg-black">
                     <a href={image.href}>
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-auto rounded shadow-md hover:opacity-80 active:opacity-60"
+                        className="w-full h-auto rounded shadow-md active:opacity-60"
                       />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center">
+                        {image.title}
+                      </div>
                     </a>
                   </div>
                 ))}
