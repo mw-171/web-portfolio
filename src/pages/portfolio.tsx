@@ -1,8 +1,9 @@
 //TODO: make everything look cooler, rounded edges, slight shadow, hover effect and click into component, etc.
+import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
 export default function Portfolio() {
   const images = [
-    { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
+    { src: "/blue.jpeg", alt: "hey", title: "butterflies", href: "/blue" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
     { src: "/uncle.jpg", alt: "hey" },
     { src: "/gold.jpeg", alt: "hey" },
     { src: "/red.jpeg", alt: "hey" },
@@ -16,99 +17,64 @@ export default function Portfolio() {
     { src: "/gold.jpeg", alt: "hey" },
   ];
 
-  const column1 = images.slice(0, Math.ceil(images.length / 4));
-  const column2 = images.slice(
-    Math.ceil(images.length / 4),
-    Math.ceil((images.length * 2) / 4)
-  );
-  const column3 = images.slice(
-    Math.ceil((images.length * 2) / 4),
-    Math.ceil((images.length * 3) / 4)
-  );
-  const column4 = images.slice(Math.ceil((images.length * 3) / 4));
-
   const imagesPerColumn = Math.ceil(images.length / 4);
 
   return (
     <div
       className="min-h-screen bg-cover bg-center overflow-auto"
-      style={{ backgroundImage: "url('/test.jpg')" }}
+      // style={{ backgroundImage: "url('/test.jpg')" }}
     >
-      <div className="px-56 py-24">
-        <p className="pb-8 font-semibold flex justify-start items-center text-4xl text-black">
-          Portfolio
-        </p>
-        {/* TODO: add gallery carousel here of projects, click into more specifics. need to develop components for individual display */}
-
-        <div className="flex flex-wrap">
-          {/* Column 1 */}
-          <div className="w-full md:w-1/3 lg:w-1/4 px-4">
-            {column1.map((image, index) => (
-              <div key={index} className="mb-4">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto"
-                />
+      <div className="px-8 md:px-24 lg:px-48 py-24">
+        <nav className="flex" aria-label="Breadcrumb">
+          <ol role="list" className="flex items-center space-x-4 pb-8 pl-4">
+            <li>
+              <div>
+                <a href="/" className="text-gray-400 hover:text-gray-500">
+                  <HomeIcon
+                    className="h-5 w-5 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <span className="sr-only">home</span>
+                </a>
               </div>
-            ))}
-          </div>
-
-          {/* Column 2 */}
-          <div className="w-full md:w-1/3 lg:w-1/4 px-4">
-            {column2.map((image, index) => (
-              <div key={index} className="mb-4">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto"
+            </li>
+            <li>
+              <div className="flex items-center">
+                <ChevronRightIcon
+                  className="h-5 w-5 flex-shrink-0 text-gray-400"
+                  aria-hidden="true"
                 />
+                <a
+                  href={"/portfolio"}
+                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
+                >
+                  portfolio
+                </a>
               </div>
-            ))}
-          </div>
-
-          {/* Column 3 */}
-          <div className="w-full md:w-1/3 lg:w-1/4 px-4">
-            {column3.map((image, index) => (
-              <div key={index} className="mb-4">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Column 4 */}
-          <div className="w-full md:w-1/2 lg:w-1/4 px-4">
-            {column4.map((image, index) => (
-              <div key={index} className="mb-4">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+            </li>
+          </ol>
+        </nav>
 
         <div className="flex flex-wrap">
           {[...Array(4)].map((_, columnIndex) => (
-            <div key={columnIndex} className="w-full md:w-1/2 lg:w-1/4 px-4">
+            <div key={columnIndex} className="w-1/2  md:w-1/3 lg:w-1/4 px-4">
               {images
                 .slice(
                   columnIndex * imagesPerColumn,
                   (columnIndex + 1) * imagesPerColumn
                 )
                 .map((image, index) => (
-                  <div key={index} className="mb-4">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-auto"
-                    />
+                  <div
+                    key={index}
+                    className="mb-4 hover:bg-gray-900 active:bg-black"
+                  >
+                    <a href={image.href}>
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-auto rounded shadow-md hover:opacity-80 active:opacity-60"
+                      />
+                    </a>
                   </div>
                 ))}
             </div>

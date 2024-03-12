@@ -1,6 +1,6 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
-export default function About() {
+export default function Projects() {
   return (
     <div className="h-screen bg-purple-50">
       <div className="px-8 md:px-24 lg:px-48 py-24">
@@ -24,17 +24,16 @@ export default function About() {
                   aria-hidden="true"
                 />
                 <a
-                  href={"/about"}
+                  href={"/projects"}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
                 >
-                  about
+                  projects
                 </a>
               </div>
             </li>
           </ol>
         </nav>
       </div>
-      {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
     </div>
   );
 }

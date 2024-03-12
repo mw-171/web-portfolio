@@ -27,7 +27,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
   { name: "About", href: "/about" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Projects", href: "#" },
+  { name: "Projects", href: "/projects" },
 ];
 
 //import '../styles/global.css';
@@ -144,14 +144,17 @@ export default function Home() {
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 My latest project.{" "}
-                <a href="/projects" className="font-semibold text-indigo-600">
+                <a
+                  href="/projects"
+                  className="font-semibold text-indigo-600 hover:text-indigo-700"
+                >
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
                 Hi! My name is Megan.
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
