@@ -36,7 +36,7 @@ export default function Title() {
                   aria-hidden="true"
                 />
                 <a
-                  href={"/projects"}
+                  href={"/portfolio"}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
                 >
                   portfolio

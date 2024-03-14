@@ -4,17 +4,17 @@ import Link from "next/link";
 export default function Portfolio() {
   const images = [
     { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
-    { src: "/uncle.jpg", alt: "hey" },
-    { src: "/gold.jpeg", alt: "hey" },
-    { src: "/red.jpeg", alt: "hey" },
-    { src: "/red.jpeg", alt: "hey" },
-    { src: "/csmbg1.jpg", alt: "hey" },
-    { src: "/gold.jpeg", alt: "hey" },
-    { src: "/blue.jpeg", alt: "hey" },
-    { src: "/gold.jpeg", alt: "hey" },
-    { src: "/gold.jpeg", alt: "hey" },
-    { src: "/blue.jpeg", alt: "hey" },
-    { src: "/gold.jpeg", alt: "hey" },
+    { src: "/uncle.jpg", alt: "hey", title: "uncle" },
+    { src: "/gold.jpeg", alt: "hey", title: "gold" },
+    { src: "/red.jpeg", alt: "hey", title: "red" },
+    { src: "/red.jpeg", alt: "hey", title: "uncle" },
+    { src: "/csmbg1.jpg", alt: "hey", title: "chainsawman" },
+    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/blue.jpeg", alt: "hey", title: "uncle" },
+    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/blue.jpeg", alt: "hey", title: "uncle" },
+    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
   ];
 
   const imagesPerColumn = Math.ceil(images.length / 4);
