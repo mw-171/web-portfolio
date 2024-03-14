@@ -1,6 +1,6 @@
 //TODO: make everything look cooler, rounded edges, slight shadow, hover effect and click into component, etc.
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
-
+import Link from "next/link";
 export default function Portfolio() {
   const images = [
     { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
@@ -54,7 +54,13 @@ export default function Portfolio() {
             </li>
           </ol>
         </nav>
-
+        <Link href={"/portfolio/butterflies"}>
+          <div className=" h-6 justify-start items-center flex">
+            <button className="relative text-gray-500 hover:text-gray-950 text-base font-medium leading-normal whitespace-nowrap">
+              check
+            </button>
+          </div>
+        </Link>
         <div className="flex flex-wrap">
           {[...Array(4)].map((_, columnIndex) => (
             <div key={columnIndex} className="w-1/2  md:w-1/3 lg:w-1/4 px-4">

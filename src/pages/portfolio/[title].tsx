@@ -3,8 +3,16 @@ import { useRouter } from "next/router";
 
 export default function Title() {
   const router = useRouter();
-  const { titleofimage } = router.query;
-  console.log(router.query.slug);
+  let title: string | undefined;
+
+  if (typeof router.query.title === "string") {
+    title = router.query.title;
+  } else if (Array.isArray(router.query.title)) {
+    title = router.query.title[0];
+  }
+
+  // console.log(router);  prints all the info!!
+
   return (
     <div className="h-screen bg-purple-50">
       <div className="px-8 md:px-24 lg:px-48 py-24">
@@ -31,7 +39,7 @@ export default function Title() {
                   href={"/projects"}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
                 >
-                  projects
+                  portfolio
                 </a>
               </div>
             </li>
@@ -45,12 +53,13 @@ export default function Title() {
                   href={"/projects"}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
                 >
-                  {titleofimage}
+                  {title}
                 </a>
               </div>
             </li>
           </ol>
         </nav>
+        <div className="text-bold">sanity check</div>
       </div>
     </div>
   );
