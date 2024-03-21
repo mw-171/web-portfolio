@@ -74,7 +74,7 @@ export default function Portfolio() {
                     <a
                       href={`/portfolio/${encodeURIComponent(image.title || "untitled")}`}
                     >
-                      <img
+                      <img //switch to using next/image might be a good idea
                         src={image.src}
                         alt={image.alt}
                         className="w-full h-auto rounded shadow-md active:opacity-60"
