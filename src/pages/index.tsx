@@ -31,7 +31,7 @@ const navigation = [
 ];
 
 //import '../styles/global.css';
-//TODO: add experience section to bottom before footer
+//TODO: add experience section to bottom before footer || kinda want to change navbar style to similar how individual nav is styled
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (

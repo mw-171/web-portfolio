@@ -18,7 +18,7 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <footer className="bg-white">
+    <footer className="">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <div className="mt-10 flex justify-center space-x-10">
           <div className="w-6 h-6 relative">

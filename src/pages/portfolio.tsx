@@ -1,6 +1,7 @@
 //TODO: make everything look cooler, rounded edges, slight shadow, hover effect and click into component, etc.
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import Footer from "../components/footer";
 export default function Portfolio() {
   const images = [
     { src: "/art/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
@@ -88,6 +89,7 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

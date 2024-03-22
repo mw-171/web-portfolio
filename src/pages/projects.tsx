@@ -1,4 +1,5 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import Footer from "../components/footer";
 
 export default function Projects() {
   return (
@@ -34,6 +35,7 @@ export default function Projects() {
           </ol>
         </nav>
       </div>
+      <Footer />
     </div>
   );
 }
