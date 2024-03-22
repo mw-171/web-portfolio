@@ -1,4 +1,5 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -33,6 +34,22 @@ export default function About() {
             </li>
           </ol>
         </nav>
+        <div className="flex justify-center ">
+          <div className="w-[500px]">
+            <div className="flex justify-between">
+              <Image
+                src="/me.png" // Path to your image
+                alt="me on vaca"
+                width={300}
+                height={400}
+              />
+              <div className="flex flex-col gap-4">
+                <div className="font-semibold text-3xl">Megan</div>
+                <div>passionate artist!</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
     </div>
