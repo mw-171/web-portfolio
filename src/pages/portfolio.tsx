@@ -3,18 +3,17 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 export default function Portfolio() {
   const images = [
-    { src: "/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
-    { src: "/uncle.jpg", alt: "hey", title: "uncle" },
-    { src: "/gold.jpeg", alt: "hey", title: "gold" },
-    { src: "/red.jpeg", alt: "hey", title: "red" },
-    { src: "/red.jpeg", alt: "hey", title: "uncle" },
-    { src: "/csmbg1.jpg", alt: "hey", title: "chainsawman" },
-    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
-    { src: "/blue.jpeg", alt: "hey", title: "uncle" },
-    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
-    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
-    { src: "/blue.jpeg", alt: "hey", title: "uncle" },
-    { src: "/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
+    { src: "/art//uncle.jpg", alt: "hey", title: "uncle" },
+    { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
+    { src: "/art/red.jpeg", alt: "hey", title: "red" },
+    { src: "/art/red.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/csmbg1.jpg", alt: "hey", title: "chainsawman" },
+    { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/blue.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+    { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
   ];
 
   const imagesPerColumn = Math.ceil(images.length / 4);
