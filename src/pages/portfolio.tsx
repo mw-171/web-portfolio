@@ -2,10 +2,11 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import Footer from "../components/footer";
+import Image from "next/image";
 export default function Portfolio() {
   const images = [
     { src: "/art/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
-    { src: "/art//uncle.jpg", alt: "hey", title: "uncle" },
+    { src: "/art/uncle.jpg", alt: "hey", title: "uncle" },
     { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
     { src: "/art/red.jpeg", alt: "hey", title: "red" },
     { src: "/art/red.jpeg", alt: "hey", title: "uncle" },
@@ -74,9 +75,12 @@ export default function Portfolio() {
                     <a
                       href={`/portfolio/${encodeURIComponent(image.title || "untitled")}`}
                     >
-                      <img //switch to using next/image might be a good idea
+                      <Image // Replaced img with next/image
                         src={image.src}
                         alt={image.alt}
+                        layout="responsive"
+                        width={500} // You can adjust this
+                        height={300} // You can adjust this
                         className="w-full h-auto rounded shadow-md active:opacity-60"
                       />
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center">
