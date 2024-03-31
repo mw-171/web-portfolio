@@ -49,9 +49,20 @@ export default function About() {
                   <div>she/her</div>
                   <div>
                     travel lover,{" "}
-                    <span className="serif-font italic">music</span>{" "}
+                    <a
+                      href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
+                      className="serif-font italic hover:border-b-2 hover:border-gray-300"
+                    >
+                      <span>music</span>
+                    </a>{" "}
                     connoisseur, and{" "}
-                    <span className="serif-font italic">art</span> enthusiast
+                    <a
+                      href="/portfolio"
+                      className="serif-font italic hover:border-b-2 hover:border-gray-300"
+                    >
+                      <span>art</span>
+                    </a>{" "}
+                    enthusiast
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
