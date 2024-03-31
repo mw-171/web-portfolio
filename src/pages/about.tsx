@@ -43,10 +43,38 @@ export default function About() {
                 width={300}
                 height={400}
               />
-              <div className="flex flex-col gap-2">
-                <div className="font-semibold text-3xl">Megan</div>
-                <div>she/her</div>
-                <div>passionate artist!</div>
+              <div className="flex flex-col justify-between">
+                <div className="flex flex-col gap-2">
+                  <div className="font-semibold text-3xl">Megan</div>
+                  <div>she/her</div>
+                  <div>passionate artist!</div>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div>
+                    <a
+                      href="https://www.linkedin.com/in/megan-bx-wu/"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                    >
+                      Linkedin
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://github.com/mw-171"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                    >
+                      Github
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="mailto:m56wu@uwaterloo.ca"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                    >
+                      Email
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
