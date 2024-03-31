@@ -34,17 +34,18 @@ export default function About() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-center ">
-          <div className="w-[500px]">
-            <div className="flex justify-between">
+        <div className="flex justify-center items-center pt-8">
+          <div className="">
+            <div className="flex justify-between gap-24">
               <Image
                 src="/me.png" // Path to your image
                 alt="me on vaca"
                 width={300}
                 height={400}
               />
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
                 <div className="font-semibold text-3xl">Megan</div>
+                <div>she/her</div>
                 <div>passionate artist!</div>
               </div>
             </div>
