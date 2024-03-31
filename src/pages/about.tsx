@@ -36,7 +36,7 @@ export default function About() {
         </nav>
         <div className="flex justify-center items-center pt-8">
           <div className="">
-            <div className="flex justify-between gap-24">
+            <div className="flex justify-between gap-8 md:gap-24">
               <Image
                 src="/me.png" // Path to your image
                 alt="me on vaca"
@@ -44,16 +44,21 @@ export default function About() {
                 height={400}
               />
               <div className="flex flex-col justify-between">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 max-w-[200px]">
                   <div className="font-semibold text-3xl">Megan</div>
                   <div>she/her</div>
-                  <div>passionate artist!</div>
+                  <div>
+                    travel lover,{" "}
+                    <span className="serif-font italic">music</span>{" "}
+                    connoisseur, and{" "}
+                    <span className="serif-font italic">art</span> enthusiast
+                  </div>
                 </div>
                 <div className="flex flex-col gap-1">
                   <div>
                     <a
                       href="https://www.linkedin.com/in/megan-bx-wu/"
-                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-700"
                     >
                       Linkedin
                     </a>
@@ -61,7 +66,7 @@ export default function About() {
                   <div>
                     <a
                       href="https://github.com/mw-171"
-                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-700"
                     >
                       Github
                     </a>
@@ -69,7 +74,7 @@ export default function About() {
                   <div>
                     <a
                       href="mailto:m56wu@uwaterloo.ca"
-                      className="border-b-2 border-indigo-500 hover:text-indigo-600"
+                      className="border-b-2 border-indigo-500 hover:text-indigo-700"
                     >
                       Email
                     </a>
