@@ -13,6 +13,7 @@ export default function Title() {
   }
   const image = images.find((img) => img.title === title);
   if (!image) {
+    //may need to implement loading screen so that the page doesn't flash
     return (
       <div className="flex justify-center items-center font-semibold text-2xl py-64">
         not found
@@ -22,7 +23,7 @@ export default function Title() {
   // console.log(router);  prints all the info!!
 
   return (
-    <div className="h-screen bg-purple-50">
+    <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
         <nav className="flex" aria-label="Breadcrumb">
           <ol role="list" className="flex items-center space-x-4 pb-8 pl-4">
