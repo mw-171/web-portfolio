@@ -5,10 +5,28 @@ import Footer from "../components/footer";
 import Image from "next/image";
 
 export const images = [
-  { src: "/art/blue.jpeg", alt: "hey", title: "butterflies" }, //TODO: add titles and hrefs for all so they can be linked to their individual places
-  { src: "/art/uncle.jpg", alt: "hey", title: "uncle" },
+  {
+    src: "/art/blue.jpeg",
+    alt: "butterflies",
+    title: "blue butterflies",
+    date: "07/10/2021",
+    media: "pencil crayons",
+  },
+  {
+    src: "/art/uncle.jpg",
+    alt: "hey",
+    title: "uncle",
+    date: "07/10/2021",
+    media: "krita digital art",
+  },
   { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
-  { src: "/art/red.jpeg", alt: "hey", title: "red" },
+  {
+    src: "/art/red.jpeg",
+    alt: "red",
+    title: "filtered red",
+    date: "05/16/2021",
+    media: "pencil crayons",
+  },
   { src: "/art/red.jpeg", alt: "hey", title: "uncle" },
   { src: "/art/csmbg1.jpg", alt: "hey", title: "chainsawman" },
   { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },

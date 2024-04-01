@@ -13,7 +13,11 @@ export default function Title() {
   }
   const image = images.find((img) => img.title === title);
   if (!image) {
-    return <div>Not found</div>;
+    return (
+      <div className="flex justify-center items-center font-semibold text-2xl py-64">
+        not found
+      </div>
+    );
   }
   // console.log(router);  prints all the info!!
 
@@ -73,8 +77,8 @@ export default function Title() {
           />
           <div className="flex justify-between gap-4">
             <div className="font-semibold">{title}</div>
-            <div className="">01/01</div>
-            <div className="">02/24/22</div>
+            <div className="">{image.media}</div>
+            <div className="">{image.date}</div>
           </div>
         </div>
       </div>
