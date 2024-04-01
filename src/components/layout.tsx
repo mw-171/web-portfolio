@@ -1,6 +1,6 @@
 // import Footer from "./footer";
 
-// function Layout(){
+// export default function Layout(){
 //     return (
 //       <div>
 //           {children}
