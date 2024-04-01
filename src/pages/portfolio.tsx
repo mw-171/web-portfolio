@@ -55,13 +55,18 @@ export default function Portfolio() {
             </li>
           </ol>
         </nav>
-        <Link href={"/portfolio/butterflies"}>
+        {/* <Link href={"/portfolio/butterflies"}>
           <div className=" h-6 justify-start items-center flex">
             <button className="relative text-gray-500 hover:text-gray-950 text-base font-medium leading-normal whitespace-nowrap">
               check
             </button>
           </div>
-        </Link>
+        </Link> */}
+        <div className="flex justify-center items-center  pb-8 ">
+          <span>
+            a collection of <span className="serif-font italic">art</span>
+          </span>
+        </div>
         <div className="flex flex-wrap">
           {[...Array(4)].map((_, columnIndex) => (
             <div key={columnIndex} className="w-1/2  md:w-1/3 lg:w-1/4 px-4">

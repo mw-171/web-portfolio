@@ -59,10 +59,10 @@ export default function Title() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-between">
-          <div className="font-bold">{title}</div>
-          <div className="font-semibold">01/01</div>
-          <div className="font-semibold">02/24/22</div>
+        <div className="flex justify-between px-16">
+          <div className="font-semibold">{title}</div>
+          <div className="">01/01</div>
+          <div className="">02/24/22</div>
         </div>
       </div>
     </div>
