@@ -75,9 +75,9 @@ export default function Title() {
             height={200}
             className=" h-auto rounded shadow-md active:opacity-60"
           />
-          <div className="flex justify-between gap-4">
+          <div className="flex justify-between gap-4 text-gray-600">
             <div className="font-semibold">{title}</div>
-            <div className="">{image.media}</div>
+            <div className="italic">{image.media}</div>
             <div className="">{image.date}</div>
           </div>
         </div>
