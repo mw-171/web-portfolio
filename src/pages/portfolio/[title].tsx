@@ -1,6 +1,7 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
+import { images } from "../portfolio";
 export default function Title() {
   const router = useRouter();
   let title: string | undefined;
@@ -10,7 +11,10 @@ export default function Title() {
   } else if (Array.isArray(router.query.title)) {
     title = router.query.title[0];
   }
-
+  const image = images.find((img) => img.title === title);
+  if (!image) {
+    return <div>Not found</div>;
+  }
   // console.log(router);  prints all the info!!
 
   return (
@@ -59,10 +63,19 @@ export default function Title() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-between px-16">
-          <div className="font-semibold">{title}</div>
-          <div className="">01/01</div>
-          <div className="">02/24/22</div>
+        <div className="flex flex-col justify-center items-center pt-2">
+          <Image // Replaced img with next/image
+            src={image.src}
+            alt={image.alt}
+            width={300}
+            height={200}
+            className=" h-auto rounded shadow-md active:opacity-60"
+          />
+          <div className="flex justify-between gap-4">
+            <div className="font-semibold">{title}</div>
+            <div className="">01/01</div>
+            <div className="">02/24/22</div>
+          </div>
         </div>
       </div>
     </div>
