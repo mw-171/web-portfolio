@@ -68,6 +68,7 @@ export default function Title() {
             </li>
           </ol>
         </nav>
+        {/* TODO: consider making this a modal instead - use this logic for projects */}
         <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
           <div className="md:w-1/2 flex items-center justify-end">
             <img // Replaced img with next/image

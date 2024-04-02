@@ -17,7 +17,7 @@ export const images = [
     alt: "butterflies",
     title: "blue butterflies",
     date: "07/10/2021",
-    media: "pencil crayons",
+    media: "colour pencils",
   },
   {
     src: "/art/uncle.jpg",
@@ -26,7 +26,13 @@ export const images = [
     date: "07/10/2021",
     media: "krita digital art",
   },
-  { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
+  {
+    src: "/art/gold.jpeg",
+    alt: "hey",
+    title: "gold",
+    date: "07/10/2021",
+    media: "colour pencils",
+  },
   {
     src: "/art/red.jpeg",
     alt: "red",
@@ -34,7 +40,13 @@ export const images = [
     date: "05/16/2021",
     media: "pencil crayons",
   },
-  { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+  {
+    src: "/art/gold.jpeg",
+    alt: "gold",
+    title: "gold",
+    date: "07/10/2021",
+    media: "colour pencils",
+  },
   {
     src: "/art/makicrop.jpg",
     alt: "maki",
@@ -42,9 +54,15 @@ export const images = [
     date: "07/10/2022",
     media: "krita digital art",
   },
-  { src: "/art/blue.jpeg", alt: "hey", title: "uncle" },
-  { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
-  { src: "/art/csmbg1.jpg", alt: "hey", title: "chainsawman" },
+  { src: "/art/blue.jpeg", alt: "hey", title: "blue" },
+  { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
+  {
+    src: "/art/csmbg1.jpg",
+    alt: "hey",
+    title: "chainsawman",
+    date: "03/20/2022",
+    media: "krita digital art",
+  },
 ];
 
 export default function Portfolio() {
