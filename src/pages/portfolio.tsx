@@ -6,6 +6,13 @@ import Image from "next/image";
 
 export const images = [
   {
+    src: "/art/linkedinbridgecropped.png",
+    alt: "linkedin bridge",
+    title: "linkedin bridge",
+    date: "02/12/24",
+    media: "procreate",
+  },
+  {
     src: "/art/blue.jpeg",
     alt: "butterflies",
     title: "blue butterflies",
@@ -27,13 +34,17 @@ export const images = [
     date: "05/16/2021",
     media: "pencil crayons",
   },
-  { src: "/art/red.jpeg", alt: "hey", title: "uncle" },
-  { src: "/art/csmbg1.jpg", alt: "hey", title: "chainsawman" },
   { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+  {
+    src: "/art/makicrop.jpg",
+    alt: "maki",
+    title: "maki from jjk",
+    date: "07/10/2022",
+    media: "krita digital art",
+  },
   { src: "/art/blue.jpeg", alt: "hey", title: "uncle" },
   { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
-  { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
-  { src: "/art/gold.jpeg", alt: "hey", title: "uncle" },
+  { src: "/art/csmbg1.jpg", alt: "hey", title: "chainsawman" },
 ];
 
 export default function Portfolio() {
