@@ -68,15 +68,15 @@ export default function Title() {
             </li>
           </ol>
         </nav>
-        <div className="flex flex-col justify-center items-center pt-2">
-          <Image // Replaced img with next/image
-            src={image.src}
-            alt={image.alt}
-            width={300}
-            height={200}
-            className=" h-auto rounded shadow-md active:opacity-60"
-          />
-          <div className="flex justify-between gap-4 text-gray-600">
+        <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
+          <div className="md:w-1/2 flex items-center justify-end">
+            <img // Replaced img with next/image
+              src={image.src}
+              alt={image.alt}
+              className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
+            />
+          </div>
+          <div className="md:w-1/4 flex flex-col justify-start gap-4 text-gray-600">
             <div className="font-semibold">{title}</div>
             <div className="italic">{image.media}</div>
             <div className="">{image.date}</div>
