@@ -1,8 +1,3 @@
-import { Bars3Icon, BellIcon } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  MagnifyingGlassIcon,
-} from "@heroicons/react/20/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,12 +6,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-import Link from "next/link";
 
 export default function Footer() {
-  const router = useRouter();
-
   return (
     <footer className="">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -24,6 +15,8 @@ export default function Footer() {
           <div className="w-6 h-6 relative">
             <a
               href="https://www.linkedin.com/in/megan-bx-wu/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-900 hover:cursor-pointer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -32,6 +25,8 @@ export default function Footer() {
           <div className="w-6 h-6 relative">
             <a
               href="https://www.instagram.com/m.117.w/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-900 hover:cursor-pointer"
             >
               <FontAwesomeIcon icon={faInstagram} />
@@ -40,6 +35,8 @@ export default function Footer() {
           <div className="w-6 h-6 relative">
             <a
               href="https://github.com/mw-171"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-900 hover:cursor-pointer"
             >
               <FontAwesomeIcon icon={faGithub} />

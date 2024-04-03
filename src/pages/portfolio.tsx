@@ -27,11 +27,11 @@ export const images = [
     media: "winsor newton watercolour",
   },
   {
-    src: "/art/gold.jpeg",
-    alt: "hey",
-    title: "gold",
-    date: "07/10/2021",
-    media: "colour pencils",
+    src: "/art/watercolour.JPG",
+    alt: "purple watercolour",
+    title: "day in the life",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
   },
   {
     src: "/art/red.jpeg",
@@ -70,11 +70,11 @@ export const images = [
     media: "krita digital art",
   },
   {
-    src: "/art/watercolour.JPG",
-    alt: "purple watercolour",
-    title: "day in the life",
-    date: "03/20/2024",
-    media: "winsor newton watercolour",
+    src: "/art/gold.jpeg",
+    alt: "hey",
+    title: "gold",
+    date: "07/10/2021",
+    media: "colour pencils",
   },
 ];
 
@@ -118,7 +118,17 @@ export default function Portfolio() {
         </nav>
         <div className="flex justify-center items-center  pb-8 ">
           <span>
-            a collection of <span className="serif-font italic">art</span>
+            a collection of{" "}
+            <span className="serif-font italic">
+              <a
+                href="https://www.instagram.com/m.117.w/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:border-b-2 hover:border-gray-300"
+              >
+                art
+              </a>
+            </span>
           </span>
         </div>
         <div className="flex flex-wrap">
