@@ -61,7 +61,7 @@ export default function About() {
         </nav>
         <div className="flex justify-center items-center pt-8">
           <div className="">
-            <div className="flex justify-between gap-8 md:gap-24">
+            <div className="flex justify-between gap-8 md:gap-16">
               <div>
                 <Image
                   src="/me.png" // Path to your image
@@ -70,66 +70,80 @@ export default function About() {
                   height={400}
                 />
               </div>
-              <div className="flex flex-col justify-between">
-                {/* <div className="flex justify-between gap-8"> */}
-                <div className="flex flex-col gap-2 max-w-[200px]">
-                  <div className="font-semibold text-3xl">Megan</div>
-                  <div>she/her</div>
-                  <div>
-                    travel lover,{" "}
-                    <a
-                      href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="serif-font italic hover:border-b-2 hover:border-gray-300"
-                    >
-                      <span>music</span>
-                    </a>{" "}
-                    connoisseur, and{" "}
-                    <a
-                      href="/portfolio"
-                      className="serif-font italic hover:border-b-2 hover:border-gray-300"
-                    >
-                      <span>art</span>
-                    </a>{" "}
-                    enthusiast
+              <div className="md:flex md:flex-col md:justify-between">
+                <div className="flex flex-col md:flex-row justify-between">
+                  {/* <div className="flex justify-between gap-8"> */}
+                  <div className="flex flex-col gap-2 max-w-[200px]">
+                    <div className="font-semibold text-3xl">Megan</div>
+                    <div>she/her</div>
+                    <div>
+                      travel lover,{" "}
+                      <a
+                        href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
+                      >
+                        <span>music</span>
+                      </a>{" "}
+                      connoisseur, and{" "}
+                      <a
+                        href="/portfolio"
+                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
+                      >
+                        <span>art</span>
+                      </a>{" "}
+                      enthusiast
+                    </div>
                   </div>
+                  {/* TODO: make this a reusable component? */}
+                  <div className="flex flex-col items-start md:items-end gap-1 pt-12 md:pt-0">
+                    <div>
+                      <a
+                        href="https://www.linkedin.com/in/megan-bx-wu/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                      >
+                        Linkedin
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mw-171"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                      >
+                        Github
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="mailto:m56wu@uwaterloo.ca"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                      >
+                        Email
+                      </a>
+                    </div>
+                  </div>
+                  {/* </div> */}
+                  {/* TODO: add somethng on bottom of about (drawing?) */}
                 </div>
-                {/* TODO: make this a reusable component? */}
-                <div className="flex flex-col gap-1">
-                  <div>
-                    <a
-                      href="https://www.linkedin.com/in/megan-bx-wu/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                    >
-                      Linkedin
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/mw-171"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                    >
-                      Github
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="mailto:m56wu@uwaterloo.ca"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                    >
-                      Email
-                    </a>
-                  </div>
+                <div className="hidden md:block pb-1">
+                  {" "}
+                  ------8&lt;-------------[{" "}
+                  <a
+                    href="your-url-here" //link to a cool page
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    cut here
+                  </a>{" "}
+                  ]----------{" "}
                 </div>
-                {/* </div> */}
-                {/* TODO: add somethng on bottom of about (drawing?) */}
               </div>
             </div>
           </div>
