@@ -139,6 +139,7 @@ export default function About() {
                     href="your-url-here" //link to a cool page
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hover:border-b-2 hover:border-gray-300"
                   >
                     cut here
                   </a>{" "}
@@ -166,9 +167,15 @@ export default function About() {
 
                         <span className="ml-6 flex h-7 items-center">
                           {open ? (
-                            <MinusIcon className="h-5 w-5" aria-hidden="true" />
+                            <MinusIcon
+                              className="h-5 w-5 hover:text-gray-400"
+                              aria-hidden="true"
+                            />
                           ) : (
-                            <PlusIcon className="h-5 w-5" aria-hidden="true" />
+                            <PlusIcon
+                              className="h-5 w-5 hover:text-gray-400"
+                              aria-hidden="true"
+                            />
                           )}
                         </span>
                       </Disclosure.Button>
