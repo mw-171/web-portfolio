@@ -131,7 +131,6 @@ export default function Portfolio() {
                       <Image // Replaced img with next/image
                         src={image.src}
                         alt={image.alt}
-                        layout="responsive"
                         width={500} // You can adjust this
                         height={300} // You can adjust this
                         className="w-full h-auto rounded shadow-md active:opacity-60"

@@ -79,6 +79,8 @@ export default function About() {
                     travel lover,{" "}
                     <a
                       href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
+                      target="_blank"
+                      rel="noreferrer"
                       className="serif-font italic hover:border-b-2 hover:border-gray-300"
                     >
                       <span>music</span>
@@ -98,6 +100,8 @@ export default function About() {
                   <div>
                     <a
                       href="https://www.linkedin.com/in/megan-bx-wu/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
                     >
                       Linkedin
@@ -106,6 +110,8 @@ export default function About() {
                   <div>
                     <a
                       href="https://github.com/mw-171"
+                      target="_blank"
+                      rel="noreferrer"
                       className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
                     >
                       Github
@@ -114,6 +120,8 @@ export default function About() {
                   <div>
                     <a
                       href="mailto:m56wu@uwaterloo.ca"
+                      target="_blank"
+                      rel="noreferrer"
                       className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
                     >
                       Email
