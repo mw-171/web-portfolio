@@ -14,7 +14,7 @@ export const images = [
     media: "colour pencils",
   },
   {
-    src: "/art/portugal.jpg",
+    src: "/art/portugal.JPG",
     alt: "europe architecture",
     title: "architecture in europe",
     date: "03/20/2024",
@@ -26,6 +26,13 @@ export const images = [
     title: "day in the life",
     date: "03/20/2024",
     media: "winsor newton watercolour",
+  },
+  {
+    src: "/art/blue_sketch.JPG",
+    alt: "sketch page",
+    title: "page 13 of my sketchbook :)",
+    date: "03/27/2024",
+    media: "muji pens",
   },
   {
     src: "/art/red.jpeg",

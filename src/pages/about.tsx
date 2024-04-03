@@ -97,6 +97,7 @@ export default function About() {
                     </div>
                   </div>
                   {/* TODO: make this a reusable component? */}
+                  {/* TODO: this looks weird on mobile. either get rid of the picture on small screns or rearrange this text to a singel row */}
                   <div className="flex flex-col items-start md:items-end gap-1 pt-12 md:pt-0">
                     <div>
                       <a
