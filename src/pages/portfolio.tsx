@@ -124,7 +124,10 @@ export default function Portfolio() {
                   (columnIndex + 1) * imagesPerColumn
                 )
                 .map((image, index) => (
-                  <div key={index} className="mb-4 relative active:bg-black">
+                  <div
+                    key={index}
+                    className="mb-4 relative active:bg-black active:rounded-md"
+                  >
                     <a
                       href={`/portfolio/${encodeURIComponent(image.title || "untitled")}`}
                     >
@@ -133,9 +136,9 @@ export default function Portfolio() {
                         alt={image.alt}
                         width={500} // You can adjust this
                         height={300} // You can adjust this
-                        className="w-full h-auto rounded shadow-md active:opacity-60"
+                        className="w-full h-auto rounded shadow-md active:opacity-60 active:rounded-md"
                       />
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center">
+                      <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center">
                         {image.title}
                       </div>
                     </a>
