@@ -20,11 +20,11 @@ export const images = [
     media: "colour pencils",
   },
   {
-    src: "/art/uncle.jpg",
-    alt: "hey",
-    title: "uncle",
-    date: "07/10/2021",
-    media: "krita digital art",
+    src: "/art/portugal.jpg",
+    alt: "europe architecture",
+    title: "architecture in europe",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
   },
   {
     src: "/art/gold.jpeg",
@@ -54,14 +54,27 @@ export const images = [
     date: "07/10/2022",
     media: "krita digital art",
   },
+  {
+    src: "/art/uncle.jpg",
+    alt: "hey",
+    title: "uncle",
+    date: "07/10/2021",
+    media: "krita digital art",
+  },
   { src: "/art/blue.jpeg", alt: "hey", title: "blue" },
-  { src: "/art/gold.jpeg", alt: "hey", title: "gold" },
   {
     src: "/art/csmbg1.jpg",
     alt: "hey",
     title: "chainsawman",
     date: "03/20/2022",
     media: "krita digital art",
+  },
+  {
+    src: "/art/watercolour.JPG",
+    alt: "purple watercolour",
+    title: "day in the life",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
   },
 ];
 
@@ -103,13 +116,6 @@ export default function Portfolio() {
             </li>
           </ol>
         </nav>
-        {/* <Link href={"/portfolio/butterflies"}>
-          <div className=" h-6 justify-start items-center flex">
-            <button className="relative text-gray-500 hover:text-gray-950 text-base font-medium leading-normal whitespace-nowrap">
-              check
-            </button>
-          </div>
-        </Link> */}
         <div className="flex justify-center items-center  pb-8 ">
           <span>
             a collection of <span className="serif-font italic">art</span>
