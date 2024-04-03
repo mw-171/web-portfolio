@@ -5,7 +5,6 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { useRouter } from "next/router";
 
 export default function Footer() {
   return (
