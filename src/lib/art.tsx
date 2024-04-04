@@ -1,18 +1,19 @@
 export const images = [
   {
     src: "/art/linkedinbridgecropped.png",
-    alt: "linkedin bridge",
+    alt: "linkedin bridge (cropped ver.)",
     title: "linkedin bridge",
     date: "02/12/24",
     media: "procreate",
   },
   {
-    src: "/art/blue.jpeg",
-    alt: "butterflies",
-    title: "blue butterflies",
-    date: "07/10/2021",
-    media: "colour pencils",
+    src: "/art/makicrop.jpg",
+    alt: "maki",
+    title: "maki from jjk",
+    date: "07/10/2022",
+    media: "krita digital art",
   },
+
   {
     src: "/art/portugal.JPG",
     alt: "europe architecture",
@@ -20,6 +21,7 @@ export const images = [
     date: "03/20/2024",
     media: "winsor newton watercolour",
   },
+
   {
     src: "/art/watercolour.JPG",
     alt: "purple watercolour",
@@ -49,11 +51,11 @@ export const images = [
     media: "colour pencils",
   },
   {
-    src: "/art/makicrop.jpg",
-    alt: "maki",
-    title: "maki from jjk",
-    date: "07/10/2022",
-    media: "krita digital art",
+    src: "/art/blue.jpeg",
+    alt: "butterflies",
+    title: "blue butterflies",
+    date: "07/10/2021",
+    media: "colour pencils",
   },
   {
     src: "/art/uncle.jpg",
