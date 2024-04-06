@@ -73,10 +73,11 @@ export const images = [
     media: "krita digital art",
   },
   {
-    src: "/art/gold.jpeg",
-    alt: "hey",
-    title: "gold",
-    date: "07/10/2021",
-    media: "colour pencils",
+    src: "/art/sketch11.JPG",
+    alt: "sketch 11",
+    title: "page 11 of my sketchbook",
+    date: "03/20/2024",
+    media: "ink pens!",
   },
 ];
+
