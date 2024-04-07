@@ -150,7 +150,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mx-auto px-4 md:px-8 lg:px-16 xl:px-64 2xl:px-96 pt-4 pb-8">
+        <div className="mx-auto max-w-[650px] pt-4 pb-8">
           <dl className="space-y-4 divide-y divide-gray-900/10">
             {experience.map((experience) => (
               <Disclosure as="div" key={experience.title} className="pt-6">
