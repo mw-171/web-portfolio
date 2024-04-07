@@ -140,7 +140,7 @@ export default function About() {
                     href="your-url-here" //link to a cool page
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:border-b-2 hover:border-gray-300"
+                    className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
                   >
                     cut here
                   </a>{" "}
