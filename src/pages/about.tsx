@@ -59,10 +59,10 @@ export default function About() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-center items-center pt-8">
+        <div className="flex justify-start pl-4 md:pl-0 md:justify-center items-center pt-8">
           <div className="">
             <div className="flex justify-between gap-8 md:gap-16">
-              <div>
+              <div className="hidden md:block">
                 <Image
                   src="/me.png" // Path to your image
                   alt="me on vaca"
@@ -93,7 +93,7 @@ export default function About() {
                       >
                         <span>art</span>
                       </a>{" "}
-                      enthusiast
+                      enthusiast. I am also an avid puzzle builder!
                     </div>
                   </div>
                   {/* TODO: make this a reusable component? */}
@@ -150,7 +150,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mx-auto md:px-8 lg:px-16 xl:px-64 2xl:px-96 pt-4 pb-8">
+        <div className="mx-auto px-4 md:px-8 lg:px-16 xl:px-64 2xl:px-96 pt-4 pb-8">
           <dl className="space-y-4 divide-y divide-gray-900/10">
             {experience.map((experience) => (
               <Disclosure as="div" key={experience.title} className="pt-6">
