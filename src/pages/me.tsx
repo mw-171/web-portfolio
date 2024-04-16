@@ -1,18 +1,6 @@
-import LocomotiveScroll from "locomotive-scroll";
-import { useEffect } from "react";
+// import LocomotiveScroll from "locomotive-scroll";
 
 export default function Me() {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]") as HTMLElement,
-      smooth: true,
-    });
-
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
-
   return (
     <>
       <div data-scroll-container>
@@ -24,7 +12,7 @@ export default function Me() {
         </div>
         <div data-scroll-section>
           <h2 className="text-3xl" data-scroll data-scroll-speed="1">
-            What's up?
+            What's up!!
           </h2>
           <p data-scroll data-scroll-speed="2">
             😬
