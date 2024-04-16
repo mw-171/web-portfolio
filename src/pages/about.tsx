@@ -137,7 +137,7 @@ export default function About() {
                   {" "}
                   ------8&lt;-------------[{" "}
                   <a
-                    href="your-url-here" //link to a cool page
+                    href="/me" //link to a cool page
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
