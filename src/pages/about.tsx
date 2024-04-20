@@ -31,7 +31,7 @@ export default function About() {
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
         <nav className="flex" aria-label="Breadcrumb">
-          <ol role="list" className="flex items-center space-x-4 pb-8 pl-4">
+          <ol role="list" className="flex items-center space-x-4 pb-8  md:pl-4">
             <li>
               <div>
                 <a href="/" className="text-gray-400 hover:text-gray-500">
@@ -59,7 +59,7 @@ export default function About() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-start pl-4 md:pl-0 md:justify-center items-center pt-8">
+        <div className="flex justify-start md:pl-0 md:justify-center items-center pt-8">
           <div className="">
             <div className="flex justify-between gap-8 md:gap-16">
               <div className="hidden md:block">
