@@ -50,9 +50,15 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2024 Megan Wu, Made with React, Tailwind, Next.
-        </p>
+        <a
+          href="https://github.com/mw-171/web-portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="mt-10 text-center text-xs leading-5 text-gray-500 hover:text-gray-900 hover:underline">
+            &copy; 2024 Megan Wu, Made with Typescript, Tailwind, Next.
+          </p>
+        </a>
       </div>
     </footer>
   );
