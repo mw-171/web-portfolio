@@ -61,10 +61,16 @@ export const images = [
     src: "/art/uncle.jpg",
     alt: "hey",
     title: "uncle",
-    date: "07/10/2021",
+    date: "01/10/2022",
     media: "krita digital art",
   },
-  { src: "/art/blue.jpeg", alt: "hey", title: "blue" },
+  {
+    src: "/art/blue.jpeg",
+    alt: "blue butterflies",
+    title: "blue",
+    date: "07/10/2021",
+    media: "colour pencils",
+  },
   {
     src: "/art/csmbg1.jpg",
     alt: "hey",
