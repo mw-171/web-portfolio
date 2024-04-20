@@ -51,11 +51,11 @@ export const images = [
     media: "colour pencils",
   },
   {
-    src: "/art/blue.jpeg",
-    alt: "butterflies",
-    title: "blue butterflies",
-    date: "07/10/2021",
-    media: "colour pencils",
+    src: "/art/slc.jpg",
+    alt: "SLC at UWaterloo",
+    title: "SLC @ UW",
+    date: "04/17/2024",
+    media: "winsor newton watercolour",
   },
   {
     src: "/art/uncle.jpg",
