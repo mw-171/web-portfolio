@@ -40,7 +40,7 @@ export default function Title() {
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
         <nav className="flex" aria-label="Breadcrumb">
-          <ol role="list" className="flex items-center space-x-4 pb-8 pl-4">
+          <ol className="flex items-center space-x-4 pb-8 pl-4">
             <li>
               <div>
                 <a href="/" className="text-gray-400 hover:text-gray-500">
