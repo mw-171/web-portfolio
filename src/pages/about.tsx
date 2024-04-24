@@ -138,8 +138,6 @@ export default function About() {
                   ------8&lt;-------------[{" "}
                   <a
                     href="/me" //link to a cool page
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
                   >
                     cut here
