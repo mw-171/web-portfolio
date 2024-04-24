@@ -6,15 +6,19 @@ export default function Me() {
 
   useEffect(() => {
     setVisible(true);
+    return () => {
+      setVisible(false);
+    };
   }, []);
 
   return (
     <div className="py-48 flex items-center justify-center">
       <div
-        className={`text-4xl font-semibold transition-opacity duration-5000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`text-4xl font-semibold transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
         hi!
       </div>
+      <div>this is going to be a cool easter egg!</div>
     </div>
   );
 }
