@@ -40,10 +40,12 @@ export default function Me() {
         <div
           className={`text-4xl text-gray-700 font-semibold z-20 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
         >
-          hi!
+          hi there!
         </div>
-        <div className="pt-4 text-gray-700">
-          this is going to be a cool easter egg!
+        <div
+          className={`pt-4 text-gray-700 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        >
+          you've discovered a cool easter egg! (wip xD)
         </div>
       </div>
     </>
