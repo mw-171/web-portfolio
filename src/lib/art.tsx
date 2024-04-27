@@ -106,4 +106,5 @@ export const images = [
     date: "08/20/2021",
     media: "krita digital art",
   },
+  //add architecture project!! round about me pic a little
 ];
