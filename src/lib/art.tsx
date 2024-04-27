@@ -13,15 +13,13 @@ export const images = [
     date: "07/10/2022",
     media: "krita digital art",
   },
-
   {
-    src: "/art/portugal.JPG",
-    alt: "europe architecture",
-    title: "architecture in europe",
-    date: "03/20/2024",
-    media: "winsor newton watercolour",
+    src: "/art/csmbg1.jpg",
+    alt: "hey",
+    title: "chainsawman",
+    date: "03/20/2022",
+    media: "krita digital art",
   },
-
   {
     src: "/art/watercolour.JPG",
     alt: "purple watercolour",
@@ -37,11 +35,11 @@ export const images = [
     media: "muji pens",
   },
   {
-    src: "/art/red.jpeg",
-    alt: "red",
-    title: "filtered red",
-    date: "05/16/2021",
-    media: "pencil crayons",
+    src: "/art/lpslogo.png",
+    alt: "ballet logo",
+    title: "Ballet Studio Logo",
+    date: "06/04/2023",
+    media: "a digital logo designed by me for Le Premier School of Ballet",
   },
   {
     src: "/art/gold.jpeg",
@@ -58,8 +56,15 @@ export const images = [
     media: "winsor newton watercolour",
   },
   {
+    src: "/art/butterflyback.jpg",
+    alt: "girl with a butterfly back",
+    title: "Wings",
+    date: "04/27/2024",
+    media: "prismacolour pencils",
+  },
+  {
     src: "/art/uncle.jpg",
-    alt: "hey",
+    alt: "uncle",
     title: "uncle",
     date: "01/10/2022",
     media: "krita digital art",
@@ -72,17 +77,33 @@ export const images = [
     media: "colour pencils",
   },
   {
-    src: "/art/csmbg1.jpg",
-    alt: "hey",
-    title: "chainsawman",
-    date: "03/20/2022",
-    media: "krita digital art",
+    src: "/art/portugal.JPG",
+    alt: "europe architecture",
+    title: "architecture in europe",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
   },
+
   {
     src: "/art/11sketch.JPG",
     alt: "sketch 11",
     title: "page 11 of my sketchbook",
     date: "03/20/2024",
     media: "ink pens!",
+  },
+
+  {
+    src: "/art/red.jpeg",
+    alt: "red",
+    title: "filtered red",
+    date: "05/16/2021",
+    media: "pencil crayons",
+  },
+  {
+    src: "/art/twilight.png",
+    alt: "twilight art",
+    title: "a silly twilight fanart",
+    date: "08/20/2021",
+    media: "krita digital art",
   },
 ];
