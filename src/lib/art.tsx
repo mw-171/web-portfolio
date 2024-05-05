@@ -14,6 +14,13 @@ export const images = [
     media: "krita digital art",
   },
   {
+    src: "/art/albumcover.jpg",
+    alt: "album cover",
+    title: "yoasobi album cover design",
+    date: "01/20/2022",
+    media: "krita and photoshop digital art",
+  },
+  {
     src: "/art/csmbg1.jpg",
     alt: "hey",
     title: "chainsawman",
@@ -35,11 +42,11 @@ export const images = [
     media: "muji pens",
   },
   {
-    src: "/art/lpslogo.png",
-    alt: "ballet logo",
-    title: "Ballet Studio Logo",
-    date: "06/04/2023",
-    media: "a digital logo designed by me for Le Premier School of Ballet",
+    src: "/art/valentines.png",
+    alt: "valentines day art",
+    title: "fireworks",
+    date: "02/14/2024",
+    media: "procreate",
   },
   {
     src: "/art/gold.jpeg",
@@ -55,6 +62,14 @@ export const images = [
     date: "04/17/2024",
     media: "winsor newton watercolour",
   },
+  {
+    src: "/art/lpslogo.png",
+    alt: "ballet logo",
+    title: "Ballet Studio Logo",
+    date: "06/04/2023",
+    media: "a digital logo designed by me for Le Premier School of Ballet",
+  },
+
   {
     src: "/art/butterflyback.jpg",
     alt: "girl with a butterfly back",
@@ -83,6 +98,13 @@ export const images = [
     date: "03/20/2024",
     media: "winsor newton watercolour",
   },
+  {
+    src: "/art/tomi.jpg",
+    alt: "tomi",
+    title: "tomi from junji ito",
+    date: "09/02/2022",
+    media: "prismacolour pencil crayons",
+  },
 
   {
     src: "/art/11sketch.JPG",
@@ -98,6 +120,13 @@ export const images = [
     title: "filtered red",
     date: "05/16/2021",
     media: "pencil crayons",
+  },
+  {
+    src: "/art/yearbookcover.jpg",
+    alt: "yearbook cover design",
+    title: "yearbook cover design @ BCI",
+    date: "10/29/2021",
+    media: "krita digital art",
   },
   {
     src: "/art/twilight.png",
