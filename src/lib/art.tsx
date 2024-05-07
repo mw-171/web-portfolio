@@ -126,7 +126,7 @@ export const images = [
     alt: "yearbook cover design",
     title: "yearbook cover design @ BCI",
     date: "10/29/2021",
-    media: "krita digital art",
+    media: "photoshop digital art",
   },
   {
     src: "/art/twilight.png",
