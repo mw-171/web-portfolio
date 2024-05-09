@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 
 export default function Projects() {
   return (
-    <div className="h-screen bg-purple-50">
+    <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="flex items-center space-x-4 pb-8 pl-4">
@@ -34,6 +34,9 @@ export default function Projects() {
             </li>
           </ol>
         </nav>
+        <div className="flex justify-center items-center  pb-8 ">
+          <span>a collection of projects!</span>
+        </div>
       </div>
       <Footer />
     </div>

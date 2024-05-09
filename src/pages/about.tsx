@@ -77,7 +77,7 @@ export default function About() {
                     <div className="font-semibold text-3xl">Megan</div>
                     <div>she/her</div>
                     <div>
-                      travel lover,{" "}
+                      Travel lover,{" "}
                       <a
                         href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
                         target="_blank"
