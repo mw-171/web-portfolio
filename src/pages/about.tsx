@@ -8,15 +8,40 @@ export default function About() {
     {
       title: "Frontend Developer",
       date: "Mar 2024 - Present",
-      description:
-        "Building the main site and hacker applications for Canada's largest hackathon.",
+      description: (
+        <>
+          Building the main{" "}
+          <a
+            href="https://hackthenorth.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+          >
+            site
+          </a>{" "}
+          and hacker applications for Canada's largest hackathon. for more
+          details.
+        </>
+      ),
       company: "Hack the North",
     },
     {
       title: "Software Developer",
       date: "Jan 2024 - Present",
-      description:
-        "Developing a full-stack tool that streamlines the U.S immigration process.",
+      description: (
+        <>
+          "Developing a full-stack{" "}
+          <a
+            href="https://www.immigr8now.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+          >
+            tool
+          </a>{" "}
+          that streamlines the U.S immigration process."
+        </>
+      ),
       company: "Immigr8",
     },
     {
