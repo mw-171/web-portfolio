@@ -158,7 +158,7 @@ export default function About() {
                   {/* </div> */}
                   {/* TODO: add somethng on bottom of about (drawing?) */}
                 </div>
-                <div className="hidden md:block pb-1">
+                <div className="text-gray-400 hidden md:block pb-1">
                   {" "}
                   ------8&lt;-------------[{" "}
                   <a
