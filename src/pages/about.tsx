@@ -30,7 +30,7 @@ export default function About() {
       date: "Jan 2024 - Present",
       description: (
         <>
-          "Developing a full-stack{" "}
+          Developing a full-stack{" "}
           <a
             href="https://www.immigr8now.com/"
             target="_blank"
@@ -39,7 +39,7 @@ export default function About() {
           >
             tool
           </a>{" "}
-          that streamlines the U.S immigration process."
+          that streamlines the U.S immigration process.
         </>
       ),
       company: "Immigr8",
