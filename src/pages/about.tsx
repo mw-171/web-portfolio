@@ -19,15 +19,14 @@ export default function About() {
           >
             site
           </a>{" "}
-          and hacker applications for Canada's largest hackathon. for more
-          details.
+          and hacker applications for Canada's largest hackathon. 
         </>
       ),
       company: "Hack the North",
     },
     {
-      title: "Software Developer",
-      date: "Jan 2024 - Present",
+      title: "Software Engineer",
+      date: "Jan 2024 - May 2024",
       description: (
         <>
           Developing a full-stack{" "}
