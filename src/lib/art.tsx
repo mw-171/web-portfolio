@@ -80,7 +80,7 @@ export const images = [
   {
     src: "/art/uncle.jpg",
     alt: "uncle",
-    title: "uncle",
+    title: "Old Days",
     date: "01/10/2022",
     media: "krita digital art",
   },
@@ -137,3 +137,4 @@ export const images = [
   },
   //add architecture project!! round about me pic a little
 ];
+

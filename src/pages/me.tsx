@@ -12,6 +12,7 @@ export default function Me() {
   }, []);
 
   return (
+    //make this page a more about me section - include bereals and travel photos!
     <>
       <div className="relative">
         <div className="z-0 absolute top-[220px] left-[370px] animate-pulse">
@@ -51,3 +52,4 @@ export default function Me() {
     </>
   );
 }
+
