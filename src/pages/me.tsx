@@ -46,7 +46,7 @@ export default function Me() {
         <div
           className={`pt-4 text-gray-700 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
         >
-          you've discovered an easter egg (wip :p)
+          you've discovered an easter egg 🐣(wip)
         </div>
       </div>
     </>
