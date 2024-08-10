@@ -33,7 +33,7 @@ export default function Me() {
           <img
             src="/8.png"
             alt="light blue stars"
-            style={{ width: "30%", height: "auto", opacity: 1.0 }}
+            style={{ width: "30%", height: "auto", opacity: 2.0 }}
           />
         </div>
       </div>
