@@ -7,7 +7,7 @@ export default function About() {
   const experience = [
     {
       title: "Frontend Developer",
-      date: "Mar 2024 - Present",
+      date: "Feb 2024 - Present",
       description: (
         <>
           Building the main{" "}
@@ -19,7 +19,7 @@ export default function About() {
           >
             site
           </a>{" "}
-          and hacker applications for Canada's largest hackathon. 
+          and hacker applications for Canada's largest hackathon.
         </>
       ),
       company: "Hack the North",
@@ -220,3 +220,4 @@ export default function About() {
     </div>
   );
 }
+
