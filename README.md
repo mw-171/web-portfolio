@@ -4,7 +4,6 @@
         <summary><h1 style="display: inline-block; margin-bottom:0px">meganwu.me</h1></summary>
       </ul>
     </div>
-    <br>
     <img src="https://img.shields.io/badge/Typescript-%2320232a.svg?style=for-the-badge&logo=typescript&logoColor=blue"/>
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
     <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
@@ -12,9 +11,9 @@
     <br><br>    
 </div>
 
-## Available Scripts
+## Run Script
 
-In the project directory, you can run:
+In the project directory:
 
 ### `npm start`
 
@@ -23,3 +22,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
