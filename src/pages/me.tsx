@@ -48,6 +48,11 @@ export default function Me() {
         >
           you've discovered an easter egg 🐣(wip)
         </div>
+        <div className="pt-24 flex items-center justify-start flex-col">
+          <div className="text-4xl text-gray-700 font-semibold z-20">
+            a peek into my daily life!
+          </div>
+        </div>
       </div>
     </>
   );
