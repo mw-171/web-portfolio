@@ -22,7 +22,7 @@ export default function Me() {
             style={{ width: "20%", height: "auto", opacity: 1.5 }}
           />
         </div>
-        <div className="z-0 absolute top-[100px] left-[900px] animate-pulse">
+        <div className="z-0 absolute top-[100px] left-[750px] animate-pulse">
           <img
             src="/9.png"
             alt="purple stars"
