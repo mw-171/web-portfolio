@@ -22,14 +22,14 @@ export default function Me() {
             style={{ width: "20%", height: "auto", opacity: 1.5 }}
           />
         </div>
-        <div className="z-0 absolute top-[100px] left-[750px] animate-pulse">
+        <div className="z-0 absolute top-[100px] left-[800px] animate-pulse">
           <img
             src="/9.png"
             alt="purple stars"
             style={{ width: "30%", height: "auto", opacity: 1.0 }}
           />
         </div>
-        <div className="z-0 absolute top-[320px] left-[850px] animate-pulse">
+        <div className="z-0 absolute top-[320px] left-[900px] animate-pulse">
           <img
             src="/8.png"
             alt="light blue stars"
@@ -37,19 +37,21 @@ export default function Me() {
           />
         </div>
       </div>
-      <div className="py-64 flex items-center justify-center flex-col ">
-        <div
-          className={`text-4xl text-gray-700 font-semibold z-20 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
-        >
-          hi there!
+      <div className="py-64 px-64 flex justify-center flex-col ">
+        <div className="flex items-center justify-center flex-col ">
+          <div
+            className={`text-4xl text-gray-700 font-semibold z-20 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+          >
+            hi there!
+          </div>
+          <div
+            className={`pt-4 text-gray-700 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+          >
+            you've discovered an easter egg 🐣(wip)
+          </div>
         </div>
-        <div
-          className={`pt-4 text-gray-700 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
-        >
-          you've discovered an easter egg 🐣(wip)
-        </div>
-        <div className="pt-24 flex items-center justify-start flex-col">
-          <div className="text-4xl text-gray-700 font-semibold z-20">
+        <div className="pt-48 flex items-start justify-center flex-col">
+          <div className="text-3xl text-gray-700 font-semibold z-20">
             a peek into my daily life!
           </div>
         </div>
