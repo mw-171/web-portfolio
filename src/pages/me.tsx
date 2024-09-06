@@ -1,6 +1,47 @@
 // import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useState } from "react";
 
+interface ImageData {
+  initialSrc: string;
+  hoverSrc: string;
+  alt: string;
+}
+
+const images: ImageData[] = [
+  {
+    initialSrc: "/bereal/class.JPG",
+    hoverSrc: "/bereal/class1.JPG",
+    alt: "Image 1",
+  },
+  {
+    initialSrc: "/bereal/asg.JPG",
+    hoverSrc: "/bereal/asg1.JPG",
+    alt: "Image 2",
+  },
+  {
+    initialSrc: "/bereal/ionfield1.JPG",
+    hoverSrc: "/bereal/ionfield.JPG",
+    alt: "Image 3",
+  },
+];
+
+const HoverImage: React.FC<ImageData> = ({ initialSrc, hoverSrc, alt }) => {
+  return (
+    <div className="relative w-1/8 p-2">
+      <img
+        src={initialSrc}
+        alt={alt}
+        className="w-full transition duration-300 ease-in-out hover:opacity-0"
+      />
+      <img
+        src={hoverSrc}
+        alt={alt}
+        className="w-full transition duration-300 ease-in-out opacity-0 hover:opacity-100 absolute top-0 left-0"
+      />
+    </div>
+  );
+};
+
 export default function Me() {
   const [isVisible, setVisible] = useState(false);
 
@@ -53,6 +94,18 @@ export default function Me() {
         <div className="pt-48 flex items-start justify-center flex-col">
           <div className="text-3xl text-gray-700 font-semibold z-20">
             a peek into my daily life!
+          </div>
+          <div className="pt-8">
+            <div className="flex justify-center space-x-2">
+              {images.map((image, index) => (
+                <HoverImage
+                  key={index}
+                  initialSrc={image.initialSrc}
+                  hoverSrc={image.hoverSrc}
+                  alt={image.alt}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
