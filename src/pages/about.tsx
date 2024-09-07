@@ -6,6 +6,12 @@ import Image from "next/image";
 export default function About() {
   const experience = [
     {
+      title: "AI Software Engineer",
+      date: "Sept 2024 - Present",
+      description: "Building the next thing with really cool people :)",
+      company: "1851 Labs",
+    },
+    {
       title: "Frontend Developer",
       date: "Feb 2024 - Present",
       description: (
