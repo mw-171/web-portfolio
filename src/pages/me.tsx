@@ -14,8 +14,8 @@ const images: ImageData[] = [
     alt: "Image 1",
   },
   {
-    initialSrc: "/bereal/asg.JPG",
-    hoverSrc: "/bereal/asg1.JPG",
+    initialSrc: "/bereal/asg1.JPG",
+    hoverSrc: "/bereal/asg.JPG",
     alt: "Image 2",
   },
   {
@@ -27,16 +27,16 @@ const images: ImageData[] = [
 
 const HoverImage: React.FC<ImageData> = ({ initialSrc, hoverSrc, alt }) => {
   return (
-    <div className="relative w-1/8 p-2">
+    <div className="relative w-1/8 ">
       <img
         src={initialSrc}
         alt={alt}
-        className="w-full transition duration-300 ease-in-out hover:opacity-0"
+        className="w-full rounded-2xl border-2 border-black transition duration-300 ease-in-out hover:opacity-0"
       />
       <img
         src={hoverSrc}
         alt={alt}
-        className="w-full transition duration-300 ease-in-out opacity-0 hover:opacity-100 absolute top-0 left-0"
+        className="w-full rounded-2xl border-2 border-black transition duration-300 ease-in-out opacity-0 hover:opacity-100 absolute top-0 left-0"
       />
     </div>
   );
