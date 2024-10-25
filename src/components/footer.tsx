@@ -56,10 +56,11 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <p className="mt-10 text-center text-xs leading-5 text-gray-500 hover:text-gray-900 hover:underline">
-            &copy; 2024 Megan Wu, Made with Typescript, Tailwind, Next.
+            &copy; 2024 Megan Wu
           </p>
         </a>
       </div>
     </footer>
   );
 }
+

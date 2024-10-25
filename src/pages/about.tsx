@@ -57,6 +57,7 @@ export default function About() {
       company: "Team 21393",
     },
   ];
+  //TODO: make breadcrumb navigator a reusable component w/ prop for current icon and page
   return (
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
@@ -89,25 +90,32 @@ export default function About() {
             </li>
           </ol>
         </nav>
-        <div className="flex justify-start md:pl-0 md:justify-center items-center pt-8">
-          <div className="">
-            <div className="flex justify-between gap-8 md:gap-16">
-              <div className="hidden md:block">
-                <Image
-                  src="/me.png" // Path to your image
-                  alt="me on vaca"
-                  width={300}
-                  height={400}
-                />
-              </div>
-              <div className="md:flex md:flex-col md:justify-between">
-                <div className="flex flex-col md:flex-row justify-between">
-                  {/* <div className="flex justify-between gap-8"> */}
-                  <div className="flex flex-col gap-2 max-w-[200px]">
-                    <div className="font-semibold text-3xl">Megan</div>
-                    <div>she/her</div>
+        <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
+          <div className="w-full md:flex md:flex-col md:justify-between">
+            <div className="flex md:flex-row justify-between">
+              <div className="flex flex-row gap-4 w-4/5">
+                <div className="hidden md:block w-full h-full">
+                  <img
+                    src="/me.png"
+                    alt="vacation!"
+                    className="w-full min-w-[120px] h-full object-cover"
+                  />
+                </div>
+                {/* <div className="flex justify-between gap-8"> */}
+                <div className="flex items-center">
+                  <div className="flex flex-col gap-2">
+                    <div className="font-semibold text-3xl">Hi, I'm Megan</div>
                     <div>
-                      Travel lover,{" "}
+                      I'm an engineering student at the{" "}
+                      <a
+                        href="https://uwaterloo.ca"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
+                      >
+                        <span>University of Waterloo</span>
+                      </a>
+                      . In my free time, I love travelling, listening to{" "}
                       <a
                         href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
                         target="_blank"
@@ -115,66 +123,68 @@ export default function About() {
                         className="serif-font italic hover:border-b-2 hover:border-gray-300"
                       >
                         <span>music</span>
-                      </a>{" "}
-                      connoisseur, and{" "}
+                      </a>
+                      , and creating{" "}
                       <a
                         href="/portfolio"
                         className="serif-font italic hover:border-b-2 hover:border-gray-300"
                       >
                         <span>art</span>
-                      </a>{" "}
-                      enthusiast. I am also an avid puzzle builder!
+                      </a>
+                      . I am also an avid puzzle builder!
+                    </div>
+                    <div className="flex justify-start items-center">
+                      <div className="text-gray-400 hdmmdidden md:block pb-1">
+                        {" "}
+                        ------8&lt;--------[{" "}
+                        <a
+                          href="/me" //link to a cool page
+                          className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
+                        >
+                          cut here
+                        </a>{" "}
+                        ]--------{" "}
+                      </div>
                     </div>
                   </div>
-                  {/* TODO: make this a reusable component? */}
-                  {/* TODO: this looks weird on mobile. either get rid of the picture on small screns or rearrange this text to a singel row */}
-                  <div className="flex flex-col items-start md:items-end gap-1 pt-12 md:pt-0">
-                    <div>
-                      <a
-                        href="https://www.linkedin.com/in/megan-bx-wu/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                      >
-                        Linkedin
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/mw-171"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                      >
-                        Github
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="mailto:m56wu@uwaterloo.ca"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                      >
-                        Email
-                      </a>
-                    </div>
-                  </div>
-                  {/* </div> */}
-                  {/* TODO: add somethng on bottom of about (drawing?) */}
-                </div>
-                <div className="text-gray-400 hidden md:block pb-1">
-                  {" "}
-                  ------8&lt;-------------[{" "}
-                  <a
-                    href="/me" //link to a cool page
-                    className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
-                  >
-                    cut here
-                  </a>{" "}
-                  ]----------{" "}
                 </div>
               </div>
+              {/* TODO: make this a reusable component? */}
+              {/* TODO: this looks weird on mobile. either get rid of the picture on small screns or rearrange this text to a singel row */}
+              <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0">
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/megan-bx-wu/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                  >
+                    Linkedin
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://github.com/mw-171"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                  >
+                    Github
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="mailto:m56wu@uwaterloo.ca"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+                  >
+                    Email
+                  </a>
+                </div>
+              </div>
+              {/* </div> */}
+              {/* TODO: add somethng on bottom of about (drawing?) */}
             </div>
           </div>
         </div>
