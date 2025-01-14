@@ -1,5 +1,12 @@
 export const images = [
   {
+    src: "/art/porsche911.jpg",
+    alt: "porsche 911",
+    title: "porsche 911",
+    date: "12/27/24",
+    media: "colour pencils",
+  },
+  {
     src: "/art/linkedinbridgecropped.png",
     alt: "linkedin bridge (cropped ver.)",
     title: "linkedin bridge",
