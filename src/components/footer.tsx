@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
           <div className="w-6 h-6 relative">
             <a
-              href="mailto:meganbxwu@gmail.com"
+              href="mailto:m56wu@uwaterloo.ca"
               className="text-gray-500 hover:text-gray-900 hover:cursor-pointer"
             >
               <FontAwesomeIcon icon={faEnvelope} />

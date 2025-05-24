@@ -1,13 +1,18 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 
 export default function About() {
   const experience = [
     {
+      title: "Software Engineer Intern",
+      date: "May 2025 - Present",
+      description: "Supporting local through a wholesale marketplace 🪴",
+      company: "Faire",
+    },
+    {
       title: "AI Software Engineer Intern",
-      date: "Sept 2024 - Present",
+      date: "Sept 2024 - May 2025",
       description: "Building the next thing with really cool people :)",
       company: "1851 Labs",
     },
@@ -16,7 +21,7 @@ export default function About() {
       date: "Feb 2024 - Oct 2024",
       description: (
         <>
-          Building the main{" "}
+          Creating the main{" "}
           <a
             href="https://hackthenorth.com"
             target="_blank"
@@ -43,7 +48,7 @@ export default function About() {
             className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
           >
             tool
-          </a>{" "}
+          </a>
           that streamlines the U.S immigration process.
         </>
       ),
@@ -53,8 +58,8 @@ export default function About() {
       title: "FIRST Robotics Co-Captain",
       date: "Mar 2022 - June 2023",
       description:
-        "Led a team of 15 to build a robot from scratch to compete in regional competitions.",
-      company: "Team 21393",
+        "Founded and led a team of 15 to build a robot from scratch to compete in regional competitions.",
+      company: "Bearbella Team 21393",
     },
   ];
   //TODO: make breadcrumb navigator a reusable component w/ prop for current icon and page
