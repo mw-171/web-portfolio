@@ -7,7 +7,20 @@ export default function About() {
     {
       title: "Software Engineer Intern",
       date: "May 2025 - Present",
-      description: "Supporting local through a wholesale marketplace 🪴",
+      description: (
+        <>
+          Supporting local through a{" "}
+          <a
+            href="https://www.faire.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+          >
+            wholesale marketplace
+          </a>{" "}
+          🪴,
+        </>
+      ),
       company: "Faire",
     },
     {
