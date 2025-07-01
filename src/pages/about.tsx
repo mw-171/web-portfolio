@@ -1,6 +1,7 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import Link from "../components/Link";
 
 export default function About() {
   const experience = [
@@ -10,15 +11,7 @@ export default function About() {
       description: (
         <>
           Supporting local through a{" "}
-          <a
-            href="https://www.faire.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-          >
-            wholesale marketplace
-          </a>{" "}
-          🪴
+          <Link href="https://www.faire.com/">wholesale marketplace</Link> 🪴
         </>
       ),
       company: "Faire",
@@ -34,15 +27,7 @@ export default function About() {
       date: "Feb 2024 - Oct 2024",
       description: (
         <>
-          Creating the main{" "}
-          <a
-            href="https://hackthenorth.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-          >
-            site
-          </a>{" "}
+          Creating the main <Link href="https://hackthenorth.com/">site</Link>{" "}
           and hacker applications for Canada's largest hackathon ⚙️
         </>
       ),
@@ -54,15 +39,8 @@ export default function About() {
       description: (
         <>
           Developing a full-stack{" "}
-          <a
-            href="https://www.immigr8now.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-          >
-            tool
-          </a>{" "}
-          that streamlines the U.S immigration process.
+          <Link href="https://www.immigr8now.com/">tool</Link> that streamlines
+          the U.S immigration process.
         </>
       ),
       company: "Immigr8",
@@ -73,14 +51,9 @@ export default function About() {
       description: (
         <>
           "Founded and led a{" "}
-          <a
-            href="https://www.instagram.com/bearbellarobotics/?hl=en"
-            target="_blank"
-            rel="noopner noreferrer"
-            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-          >
+          <Link href="https://www.instagram.com/bearbellarobotics/?hl=en">
             team
-          </a>{" "}
+          </Link>{" "}
           of 15 to build a robot from scratch to compete in regional
           competitions."
         </>
@@ -184,34 +157,15 @@ export default function About() {
               {/* TODO: this looks weird on mobile. either get rid of the picture on small screns or rearrange this text to a singel row */}
               <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0">
                 <div>
-                  <a
-                    href="https://www.linkedin.com/in/megan-bx-wu/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                  >
+                  <Link href="https://www.linkedin.com/in/megan-bx-wu/">
                     Linkedin
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a
-                    href="https://github.com/mw-171"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                  >
-                    Github
-                  </a>
+                  <Link href="https://github.com/mw-171">Github</Link>
                 </div>
                 <div>
-                  <a
-                    href="mailto:m56wu@uwaterloo.ca"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
-                  >
-                    Email
-                  </a>
+                  <Link href="mailto:m56wu@uwaterloo.ca">Email</Link>
                 </div>
               </div>
               {/* </div> */}
