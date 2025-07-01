@@ -43,7 +43,7 @@ export default function About() {
           >
             site
           </a>{" "}
-          and hacker applications for Canada's largest hackathon.
+          and hacker applications for Canada's largest hackathon ⚙️
         </>
       ),
       company: "Hack the North",
@@ -61,7 +61,7 @@ export default function About() {
             className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
           >
             tool
-          </a>
+          </a>{" "}
           that streamlines the U.S immigration process.
         </>
       ),
@@ -70,8 +70,21 @@ export default function About() {
     {
       title: "FIRST Robotics Co-Captain",
       date: "Mar 2022 - June 2023",
-      description:
-        "Founded and led a team of 15 to build a robot from scratch to compete in regional competitions.",
+      description: (
+        <>
+          "Founded and led a{" "}
+          <a
+            href="https://www.instagram.com/bearbellarobotics/?hl=en"
+            target="_blank"
+            rel="noopner noreferrer"
+            className="border-b-2 border-gray-300 hover:text-indigo-700 hover:border-indigo-500"
+          >
+            team
+          </a>{" "}
+          of 15 to build a robot from scratch to compete in regional
+          competitions."
+        </>
+      ),
       company: "Bearbella Team 21393",
     },
   ];
