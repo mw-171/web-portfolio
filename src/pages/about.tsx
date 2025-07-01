@@ -18,7 +18,7 @@ export default function About() {
           >
             wholesale marketplace
           </a>{" "}
-          🪴,
+          🪴
         </>
       ),
       company: "Faire",
