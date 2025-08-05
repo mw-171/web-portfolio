@@ -50,12 +50,12 @@ export default function About() {
       date: "Mar 2022 - June 2023",
       description: (
         <>
-          "Founded and led a{" "}
+          Founded and led a{" "}
           <Link href="https://www.instagram.com/bearbellarobotics/?hl=en">
             team
           </Link>{" "}
           of 15 to build a robot from scratch to compete in regional
-          competitions."
+          competitions.
         </>
       ),
       company: "Bearbella Team 21393",
