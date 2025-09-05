@@ -85,6 +85,20 @@ export const images = [
     media: "prismacolour pencils",
   },
   {
+    src: "/art/Space_debris.jpg",
+    alt: "space debris",
+    title: "Space Debris Advocacy Poster",
+    date: "04/10/2025",
+    media: "procreate",
+  },
+  {
+    src: "/art/shanghai_postcard.jpg",
+    alt: "shanghai postcard",
+    title: "Shanghai Postcard",
+    date: "04/23/2024",
+    media: "procreate",
+  },
+  {
     src: "/art/uncle.jpg",
     alt: "uncle",
     title: "Old Days",

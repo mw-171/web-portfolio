@@ -7,7 +7,7 @@ export default function About() {
   const experience = [
     {
       title: "Software Engineer Intern",
-      date: "May 2025 - Present",
+      date: "May 2025 - August 2025",
       description: (
         <>
           Supporting local through a{" "}

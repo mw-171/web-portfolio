@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,13 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
   },
-  "include": [
-    "src",
-    "src/pages/portfolio.tsx"
-, "src/pages/about.tsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src", "src/pages/portfolio.tsx", "src/pages/about.tsx"],
+  "exclude": ["node_modules"],
 }
+
