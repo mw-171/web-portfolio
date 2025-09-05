@@ -44,7 +44,7 @@ export const images = [
   {
     src: "/art/blue_sketch.JPG",
     alt: "sketch page",
-    title: "page 13 of my sketchbook :)",
+    title: "page 13 of my sketchbook!",
     date: "03/27/2024",
     media: "muji pens",
   },
@@ -54,6 +54,13 @@ export const images = [
     title: "fireworks",
     date: "02/14/2024",
     media: "procreate",
+  },
+  {
+    src: "/art/tomi.jpg",
+    alt: "tomi",
+    title: "tomi from junji ito",
+    date: "09/02/2022",
+    media: "prismacolour pencil crayons",
   },
   {
     src: "/art/gold.jpeg",
@@ -70,19 +77,11 @@ export const images = [
     media: "winsor newton watercolour",
   },
   {
-    src: "/art/lpslogo.png",
-    alt: "ballet logo",
-    title: "Ballet Studio Logo",
-    date: "06/04/2023",
-    media: "a digital logo designed by me for Le Premier School of Ballet",
-  },
-
-  {
-    src: "/art/butterflyback.jpg",
-    alt: "girl with a butterfly back",
-    title: "Wings",
-    date: "04/27/2024",
-    media: "prismacolour pencils",
+    src: "/art/yearbookcover.jpg",
+    alt: "yearbook cover design",
+    title: "yearbook cover design @ BCI",
+    date: "10/29/2021",
+    media: "photoshop digital art",
   },
   {
     src: "/art/Space_debris.jpg",
@@ -120,13 +119,12 @@ export const images = [
     media: "winsor newton watercolour",
   },
   {
-    src: "/art/tomi.jpg",
-    alt: "tomi",
-    title: "tomi from junji ito",
-    date: "09/02/2022",
-    media: "prismacolour pencil crayons",
+    src: "/art/lpslogo.png",
+    alt: "ballet logo",
+    title: "Ballet Studio Logo",
+    date: "06/04/2023",
+    media: "a digital logo designed by me for Le Premier School of Ballet",
   },
-
   {
     src: "/art/11sketch.JPG",
     alt: "sketch 11",
@@ -143,11 +141,11 @@ export const images = [
     media: "pencil crayons",
   },
   {
-    src: "/art/yearbookcover.jpg",
-    alt: "yearbook cover design",
-    title: "yearbook cover design @ BCI",
-    date: "10/29/2021",
-    media: "photoshop digital art",
+    src: "/art/butterflyback.jpg",
+    alt: "girl with a butterfly back",
+    title: "wings",
+    date: "04/27/2024",
+    media: "prismacolour pencils",
   },
   {
     src: "/art/twilight.png",
