@@ -9,11 +9,11 @@ export default function Home() {
         <div className="text-5xl text-gray-700 font-semibold">
           hi, i'm <span className="serif-font italic">megan</span>
         </div>
-        <div className="flex items-center space-x-4 pt-4">
+        <div className="flex items-center space-x-1 sm:space-x-4 pt-4">
           <div>
             <a
               href="/about"
-              className="pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
+              className="pl-0 sm:pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               <span>about</span>
             </a>
@@ -29,7 +29,7 @@ export default function Home() {
             </svg>
             <a
               href="/portfolio"
-              className="pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
+              className="pl-1 sm:pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               portfolio
             </a>
