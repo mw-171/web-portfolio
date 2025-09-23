@@ -35,11 +35,11 @@ export const images = [
     media: "krita digital art",
   },
   {
-    src: "/art/watercolour.JPG",
-    alt: "purple watercolour",
-    title: "day in the life",
-    date: "03/20/2024",
-    media: "winsor newton watercolour",
+    src: "/art/twilight.png",
+    alt: "twilight art",
+    title: "a silly twilight fanart",
+    date: "08/20/2021",
+    media: "krita digital art",
   },
   {
     src: "/art/blue_sketch.JPG",
@@ -125,6 +125,14 @@ export const images = [
     date: "06/04/2023",
     media: "a digital logo designed by me for Le Premier School of Ballet",
   },
+
+  {
+    src: "/art/torontotownhouse.JPG",
+    alt: "toronto townhouse",
+    title: "toronto townhouse",
+    date: "09/22/2025",
+    media: "procreate",
+  },
   {
     src: "/art/11sketch.JPG",
     alt: "sketch 11",
@@ -148,11 +156,11 @@ export const images = [
     media: "prismacolour pencils",
   },
   {
-    src: "/art/twilight.png",
-    alt: "twilight art",
-    title: "a silly twilight fanart",
-    date: "08/20/2021",
-    media: "krita digital art",
+    src: "/art/watercolour.JPG",
+    alt: "purple watercolour",
+    title: "day in the life",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
   },
   //add architecture project!! round about me pic a little
 ];
