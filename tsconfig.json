@@ -16,8 +16,9 @@
     "noEmit": true,
     "jsx": "preserve",
     "incremental": true,
+    "ignoreDeprecations": "6.0",
   },
-  "include": ["src", "src/pages/portfolio.tsx", "src/pages/about.tsx"],
+  "include": ["src", "src/pages/art.tsx", "src/pages/about.tsx"],
   "exclude": ["node_modules"],
 }
 
