@@ -45,7 +45,7 @@ export default function Home() {
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
             <a
-              href="/portfolio"
+              href="/art"
               className="pl-1 sm:pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               art

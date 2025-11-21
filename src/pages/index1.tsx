@@ -28,6 +28,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   { name: "Portfolio", href: "/portfolio" },
+  { name: "Art", href: "/art" },
 ];
 
 //import '../styles/global.css';
@@ -180,3 +181,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -32,10 +32,10 @@ export default function Portfolio() {
                   aria-hidden="true"
                 />
                 <a
-                  href={"/portfolio"}
+                  href={"/art"}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
                 >
-                  portfolio
+                  art
                 </a>
               </div>
             </li>

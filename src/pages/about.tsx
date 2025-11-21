@@ -130,7 +130,7 @@ export default function About() {
                       </a>
                       , and creating{" "}
                       <a
-                        href="/portfolio"
+                        href="/art"
                         className="serif-font italic hover:border-b-2 hover:border-gray-300"
                       >
                         <span>art</span>
