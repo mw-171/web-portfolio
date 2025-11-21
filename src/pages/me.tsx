@@ -15,7 +15,6 @@ export default function Me() {
       setVisible(false);
     };
   }, []);
-
   return (
     //make this page a more about me section - include bereals and travel photos!
     <>
