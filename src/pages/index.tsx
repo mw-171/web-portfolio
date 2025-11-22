@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Analytics />
-      <div className="flex flex-col justify-center items-center py-72 sm:px-48 sm:py-72">
+      <div className="flex flex-col justify-center items-center py-72 sm:px-48 sm:py-80">
         <div className="text-5xl text-gray-700 font-semibold">
           hi, i'm <span className="serif-font italic">megan</span>
         </div>
