@@ -109,16 +109,24 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-foreground line-clamp-2">
                     {project.title}
                   </h3>
-                  <a href={project.github}>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="opacity-20 hover:opacity-10"
+                      className="opacity-20 hover:opacity-50"
                     />
                   </a>
-                  <a href={project.website}>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faArrowUpRightFromSquare}
-                      className="opacity-20 hover:opacity-10"
+                      className="opacity-20 hover:opacity-50"
                     />
                   </a>
                 </span>
