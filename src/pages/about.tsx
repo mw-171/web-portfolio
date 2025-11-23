@@ -2,6 +2,7 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
+import Footer from "../components/footer";
 
 export default function About() {
   const experience = [
@@ -217,6 +218,7 @@ export default function About() {
         </div>
       </div>
       {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
+      <Footer />
     </div>
   );
 }
