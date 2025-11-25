@@ -56,7 +56,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
-      <div className="px-8 md:px-24 lg:px-48 py-24">
+      <div className="px-8 md:px-24 lg:px-48 py-24 md:pb-36">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="flex items-center space-x-4 pb-8 pl-4">
             <li>
