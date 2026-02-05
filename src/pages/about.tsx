@@ -2,13 +2,23 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
-import Footer from "../components/footer";
 
 export default function About() {
   const experience = [
     {
+      title: "Member of Technical Staff",
+      date: "Jan 2026 - Present",
+      description: (
+        <>
+          Automating operations at{" "}
+          <Link href="https://pointer.ai/">pointer.ai</Link>
+        </>
+      ),
+      company: "Pointer",
+    },
+    {
       title: "Software Engineer Intern",
-      date: "May 2025 - August 2025",
+      date: "May 2025 - September 2025",
       description: (
         <>
           Supporting local through a{" "}
@@ -51,12 +61,12 @@ export default function About() {
       date: "Mar 2022 - June 2023",
       description: (
         <>
-          Founded and led a{" "}
+          "Founded and led a{" "}
           <Link href="https://www.instagram.com/bearbellarobotics/?hl=en">
             team
           </Link>{" "}
           of 15 to build a robot from scratch to compete in regional
-          competitions.
+          competitions."
         </>
       ),
       company: "Bearbella Team 21393",
@@ -131,7 +141,7 @@ export default function About() {
                       </a>
                       , and creating{" "}
                       <a
-                        href="/art"
+                        href="/portfolio"
                         className="serif-font italic hover:border-b-2 hover:border-gray-300"
                       >
                         <span>art</span>
@@ -218,7 +228,6 @@ export default function About() {
         </div>
       </div>
       {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
-      <Footer />
     </div>
   );
 }
