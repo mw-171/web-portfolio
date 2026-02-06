@@ -11,6 +11,11 @@ export const images: ImageData[] = [
     alt: "in class",
   },
   {
+    initialSrc: "/bereal/frisbee.JPG",
+    hoverSrc: "/bereal/frisbee1.JPG",
+    alt: "frisbee game",
+  },
+  {
     initialSrc: "/bereal/asg1.JPG",
     hoverSrc: "/bereal/asg.JPG",
     alt: "all systems go",
@@ -19,11 +24,6 @@ export const images: ImageData[] = [
     initialSrc: "/bereal/ionfield1.JPG",
     hoverSrc: "/bereal/ionfield.JPG",
     alt: "frisbee practice!",
-  },
-  {
-    initialSrc: "/bereal/frisbee.JPG",
-    hoverSrc: "/bereal/frisbee1.JPG",
-    alt: "frisbee game",
   },
   {
     initialSrc: "/bereal/hackthenorth.JPG",
