@@ -36,6 +36,16 @@ export const images: ImageData[] = [
     alt: "blue jays game",
   },
   {
+    initialSrc: "/bereal/ballet.JPG",
+    hoverSrc: "/bereal/ballet1.JPG",
+    alt: "ballet class",
+  },
+  {
+    initialSrc: "/bereal/flowers.JPG",
+    hoverSrc: "/bereal/flowers1.JPG",
+    alt: "flowers!",
+  },
+  {
     initialSrc: "/bereal/oweek.JPG",
     hoverSrc: "/bereal/oweek1.JPG",
     alt: "uw orientation",
