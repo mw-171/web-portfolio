@@ -23,7 +23,7 @@ export const images: ImageData[] = [
   {
     initialSrc: "/bereal/ionfield1.JPG",
     hoverSrc: "/bereal/ionfield.JPG",
-    alt: "frisbee practice!",
+    alt: "frisbee practice",
   },
   {
     initialSrc: "/bereal/hackthenorth.JPG",
@@ -43,7 +43,7 @@ export const images: ImageData[] = [
   {
     initialSrc: "/bereal/flowers.JPG",
     hoverSrc: "/bereal/flowers1.JPG",
-    alt: "flowers!",
+    alt: "flowers",
   },
   {
     initialSrc: "/bereal/oweek.JPG",
