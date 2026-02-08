@@ -56,14 +56,19 @@ export const images: ImageData[] = [
     alt: "circuits lab",
   },
   {
+    initialSrc: "/bereal/mttam.JPG",
+    hoverSrc: "/bereal/mttam1.JPG",
+    alt: "mount tam",
+  },
+  {
     initialSrc: "/bereal/coffee.JPG",
     hoverSrc: "/bereal/coffee1.JPG",
     alt: "coffee @ salesforce park",
   },
   {
-    initialSrc: "/bereal/mttam.JPG",
-    hoverSrc: "/bereal/mttam1.JPG",
-    alt: "mount tam",
+    initialSrc: "/bereal/pointreyes.JPG",
+    hoverSrc: "/bereal/pointreyes1.JPG",
+    alt: "point reyes",
   },
 ];
 
