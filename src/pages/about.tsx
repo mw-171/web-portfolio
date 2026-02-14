@@ -109,7 +109,7 @@ export default function About() {
         <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
           <div className="w-full md:flex md:flex-col md:justify-between">
             <div className="flex md:flex-row justify-between">
-              <div className="flex flex-row gap-4 w-4/5">
+              <div className="flex flex-row gap-5 w-4/5">
                 <div className="hidden md:block w-full h-full">
                   <img
                     src="/me.png"
