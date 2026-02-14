@@ -1,5 +1,5 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
 import FancyLink from "../components/FancyLink";
@@ -201,11 +201,22 @@ export default function About() {
                       </Disclosure.Button>
                     </dt>
                     <dt className="text-gray-500">{experience.date}</dt>
-                    <Disclosure.Panel as="dd" className="pt-2 pr-12">
-                      <p className="text-base leading-7 text-gray-600">
-                        {experience.description}
-                      </p>
-                    </Disclosure.Panel>
+
+                    <Transition
+                      enter="transition-all duration-200 ease-out"
+                      enterFrom="max-h-0 opacity-0"
+                      enterTo="max-h-96 opacity-100"
+                      leave="transition-all duration-150 ease-in"
+                      leaveFrom="max-h-96 opacity-100"
+                      leaveTo="max-h-0 opacity-0"
+                    >
+                      {" "}
+                      <Disclosure.Panel as="dd" className="pt-2 pr-12">
+                        <p className="text-base leading-7 text-gray-600">
+                          {experience.description}
+                        </p>
+                      </Disclosure.Panel>
+                    </Transition>
                   </>
                 )}
               </Disclosure>
