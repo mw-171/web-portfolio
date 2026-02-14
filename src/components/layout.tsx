@@ -1,11 +1,18 @@
-// import Footer from "./footer";
+import Footer from "./footer";
+import { PageTransition } from "./PageTransition";
 
-// export default function Layout(){
-//     return (
-//       <div>
-//           {children}
-//         <Footer />
-//       </div>
-//     )
-//   }
-export {};
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+export default function Layout({ children }: LayoutProps) {
+  return (
+    <>
+      <PageTransition>
+        <main>{children}</main>
+      </PageTransition>
+      <Footer />
+    </>
+  );
+}
+

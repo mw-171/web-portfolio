@@ -2,7 +2,6 @@ import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
-  //TODO: update homepage
   return (
     <>
       <Analytics />
