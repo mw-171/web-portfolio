@@ -2,6 +2,7 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
+import FancyLink from "../components/FancyLink";
 
 export default function About() {
   const experience = [
@@ -122,31 +123,16 @@ export default function About() {
                     <div className="font-semibold text-3xl">Hi, I'm Megan</div>
                     <div>
                       I'm an engineering student at the{" "}
-                      <a
-                        href="https://uwaterloo.ca"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
-                      >
-                        <span>University of Waterloo</span>
-                      </a>
+                      <FancyLink href="https://uwaterloo.ca">
+                        University of Waterloo
+                      </FancyLink>
                       . In my free time, I love travelling, listening to{" "}
-                      <a
-                        href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
-                      >
-                        <span>music</span>
-                      </a>
+                      <FancyLink href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb">
+                        music
+                      </FancyLink>
                       , and creating{" "}
-                      <a
-                        href="/portfolio"
-                        className="serif-font italic hover:border-b-2 hover:border-gray-300"
-                      >
-                        <span>art</span>
-                      </a>
-                      . I am also an avid puzzle builder!
+                      <FancyLink href="/portfolio">art</FancyLink>. I am also an
+                      avid puzzle builder!
                     </div>
                     <div className="flex justify-start items-center">
                       <div className="text-gray-400 hdmmdidden md:block pb-1">
