@@ -147,7 +147,7 @@ export default function Home() {
                 My latest project.{" "}
                 <a
                   href="/projects"
-                  className="font-semibold text-indigo-600 hover:text-indigo-700"
+                  className="font-semibold text-violet-200 hover:text-violet-300"
                 >
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">&rarr;</span>
