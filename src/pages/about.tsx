@@ -113,7 +113,7 @@ export default function About() {
                   <img
                     src="/me.png"
                     alt="vacation!"
-                    className="w-full min-w-[120px] h-full object-cover"
+                    className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
                   />
                 </div>
                 {/* <div className="flex justify-between gap-8"> */}
