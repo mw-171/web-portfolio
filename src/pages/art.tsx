@@ -62,7 +62,7 @@ export default function Portfolio() {
               {images
                 .slice(
                   columnIndex * imagesPerColumn,
-                  (columnIndex + 1) * imagesPerColumn
+                  (columnIndex + 1) * imagesPerColumn,
                 )
                 .map((image, index) => (
                   <div
@@ -70,7 +70,7 @@ export default function Portfolio() {
                     className="mb-4 relative active:bg-black active:rounded-md"
                   >
                     <a
-                      href={`/portfolio/${encodeURIComponent(image.title || "untitled")}`}
+                      href={`/art/${encodeURIComponent(image.title || "untitled")}`}
                     >
                       <Image // Replaced img with next/image
                         src={image.src}
