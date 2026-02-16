@@ -18,7 +18,12 @@
     "incremental": true,
     "ignoreDeprecations": "6.0",
   },
-  "include": ["src", "src/pages/art.tsx", "src/pages/about.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "src/pages/art.tsx",
+    "src/pages/about.tsx",
+  ],
   "exclude": ["node_modules"],
 }
 
