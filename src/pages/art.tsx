@@ -56,9 +56,9 @@ export default function Portfolio() {
             </span>
           </span>
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mx-2">
           {[...Array(4)].map((_, columnIndex) => (
-            <div key={columnIndex} className="w-1/2  md:w-1/3 lg:w-1/4 px-4">
+            <div key={columnIndex} className="w-1/2  md:w-1/3 lg:w-1/4 px-2">
               {images
                 .slice(
                   columnIndex * imagesPerColumn,
