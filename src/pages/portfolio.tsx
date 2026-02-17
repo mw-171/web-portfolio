@@ -31,10 +31,10 @@ const projects = [
     src: "vocalmockup.png",
     description: "An AI voice-to-text scheduling app",
     technologies: [
-      "Next.js",
       "TypeScript",
       "Whisper",
-      "Google API",
+      "Google OAuth",
+      "Next.js",
       "Tailwind",
     ],
     github: "https://github.com/mw-171/VoCal",
@@ -89,7 +89,7 @@ export default function Portfolio() {
         <div className="flex justify-center items-center pb-8">
           <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-8">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -139,7 +139,7 @@ export default function Portfolio() {
                   {project.technologies.slice(0, 3).map((tech: any) => (
                     <span
                       key={tech}
-                      className="inline-block px-2 py-1 bg-muted text-muted-foreground text-xs rounded"
+                      className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg cursor-pointer"
                     >
                       {tech}
                     </span>

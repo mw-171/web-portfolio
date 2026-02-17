@@ -5,3 +5,4 @@ export type ImageType = {
   date?: string;
   media?: string;
 };
+
