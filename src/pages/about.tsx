@@ -224,7 +224,6 @@ export default function About() {
           </dl>
         </div>
       </div>
-      {/* TODO: decide if necessary, more detailed summary/intro maybe? */}
     </div>
   );
 }
