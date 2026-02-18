@@ -15,7 +15,7 @@ export default function Title() {
     title = router.query.title;
   } else if (Array.isArray(router.query.title)) {
     title = router.query.title[0];
-  } // console.log(router);  prints all the info!!
+  }
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -85,7 +85,7 @@ export default function Title() {
         {/* TODO: consider making this a modal instead - use this logic for projects */}
         <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
           <div className="md:w-1/2 flex items-center justify-end">
-            <img // Replaced img with next/image
+            <img
               src={image?.src}
               alt={image?.alt}
               className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"

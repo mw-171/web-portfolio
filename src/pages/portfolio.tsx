@@ -97,7 +97,6 @@ export default function Portfolio() {
             >
               <div className="relative w-full h-48 bg-muted overflow-hidden">
                 <img
-                  //   src={`/.jpg?height=160&width=400&query=${encodeURIComponent(project.src)}`}
                   src={project.src}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

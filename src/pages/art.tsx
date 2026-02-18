@@ -7,10 +7,7 @@ export default function Portfolio() {
   const imagesPerColumn = Math.ceil(images.length / 4);
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center overflow-auto"
-      // style={{ backgroundImage: "url('/test.jpg')" }}
-    >
+    <div className="min-h-screen bg-cover bg-center overflow-auto">
       <div className="px-8 md:px-24 lg:px-48 py-24">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="flex items-center space-x-4 pb-8 pl-4">
