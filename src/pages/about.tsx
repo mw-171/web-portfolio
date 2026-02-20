@@ -117,7 +117,6 @@ export default function About() {
                     className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
                   />
                 </div>
-                {/* <div className="flex justify-between gap-8"> */}
                 <div className="flex items-center">
                   <div className="flex flex-col gap-2">
                     <div className="font-semibold text-3xl">Hi, I'm Megan</div>
@@ -139,7 +138,7 @@ export default function About() {
                         {" "}
                         ------8&lt;--------[{" "}
                         <a
-                          href="/me" //link to a cool page
+                          href="/me"
                           className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
                         >
                           cut here
@@ -164,8 +163,6 @@ export default function About() {
                   <Link href="mailto:m56wu@uwaterloo.ca">Email</Link>
                 </div>
               </div>
-              {/* </div> */}
-              {/* TODO: add somethng on bottom of about (drawing?) */}
             </div>
           </div>
         </div>
