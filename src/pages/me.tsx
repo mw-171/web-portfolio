@@ -16,7 +16,6 @@ export default function Me() {
     };
   }, []);
   return (
-    //make this page a more about me section - include bereals and travel photos!
     <>
       <div className="hidden md:block relative">
         <div className="z-0 absolute top-[220px] left-[200px] md:left-[280px] animate-pulse">
