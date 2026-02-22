@@ -1,6 +1,5 @@
 "use client";
 
-// import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useState } from "react";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
