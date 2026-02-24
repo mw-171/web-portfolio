@@ -1,5 +1,4 @@
 import Breadcrumb from "../components/Breadcrumb";
-import Footer from "../components/footer";
 import Image from "next/image";
 import { images } from "../lib/art";
 
@@ -58,7 +57,6 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

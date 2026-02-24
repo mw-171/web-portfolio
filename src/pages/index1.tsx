@@ -19,7 +19,6 @@
 // reportWebVitals();
 // pages/index.tsx
 import React from "react";
-import Footer from "../components/footer";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -177,7 +176,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

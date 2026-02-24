@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <PageTransition>
-        <main>{children}</main>
+        <main className="pb-24">{children}</main>
       </PageTransition>
       <Footer />
     </>

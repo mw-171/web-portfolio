@@ -1,5 +1,4 @@
 import Breadcrumb from "../components/Breadcrumb";
-import Footer from "../components/footer";
 
 export default function Projects() {
   return (
@@ -10,7 +9,6 @@ export default function Projects() {
           <span>a collection of projects!</span>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

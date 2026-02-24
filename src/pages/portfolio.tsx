@@ -1,5 +1,4 @@
 import Breadcrumb from "../components/Breadcrumb";
-import Footer from "../components/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -115,7 +114,6 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
