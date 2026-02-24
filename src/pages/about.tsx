@@ -103,9 +103,8 @@ export default function About() {
                       <FancyLink href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb">
                         music
                       </FancyLink>
-                      , and creating{" "}
-                      <FancyLink href="/portfolio">art</FancyLink>. I am also an
-                      avid puzzle builder!
+                      , and creating <FancyLink href="/art">art</FancyLink>. I
+                      am also an avid puzzle builder!
                     </div>
                     <div className="flex justify-start items-center">
                       <div className="text-gray-400 hdmmdidden md:block pb-1">
