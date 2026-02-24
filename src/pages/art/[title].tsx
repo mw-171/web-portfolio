@@ -1,4 +1,4 @@
-import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import Breadcrumb from "../../components/Breadcrumb";
 import { useRouter } from "next/router";
 import LoadingSpinner from "../../components/loadingSpinner";
 import { useEffect, useState } from "react";
@@ -39,49 +39,12 @@ export default function Title() {
   return (
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
-        <nav className="flex" aria-label="Breadcrumb">
-          <ol className="flex items-center space-x-4 pb-8 pl-4">
-            <li>
-              <div>
-                <a href="/" className="text-gray-400 hover:text-gray-500">
-                  <HomeIcon
-                    className="h-5 w-5 flex-shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">home</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRightIcon
-                  className="h-5 w-5 flex-shrink-0 text-gray-400"
-                  aria-hidden="true"
-                />
-                <a
-                  href={"/art"}
-                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
-                >
-                  art
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRightIcon
-                  className="h-5 w-5 flex-shrink-0 text-gray-400"
-                  aria-hidden="true"
-                />
-                <a
-                  href={"/projects"}
-                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
-                >
-                  {title}
-                </a>
-              </div>
-            </li>
-          </ol>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: "art", href: "/art" },
+            { label: title || "untitled", href: "/projects" },
+          ]}
+        />
         {/* TODO: consider making this a modal instead - use this logic for projects */}
         <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
           <div className="md:w-1/2 flex items-center justify-end">

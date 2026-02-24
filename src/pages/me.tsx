@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import Breadcrumb from "../components/Breadcrumb";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import { images } from "../lib/bereals";
 
@@ -40,49 +40,13 @@ export default function Me() {
         </div>
       </div>
       <div className="pt-24 px-8 md:px-24 lg:px-48 flex justify-center flex-col ">
-        <nav className="flex" aria-label="Breadcrumb">
-          <ol className="flex items-center space-x-4 pb-8  md:pl-4">
-            <li>
-              <div>
-                <a href="/" className="text-gray-400 hover:text-gray-500">
-                  <HomeIcon
-                    className="h-5 w-5 flex-shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">home</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRightIcon
-                  className="h-5 w-5 flex-shrink-0 text-gray-400"
-                  aria-hidden="true"
-                />
-                <a
-                  href={"/about"}
-                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
-                >
-                  about
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRightIcon
-                  className="h-5 w-5 flex-shrink-0 text-gray-400"
-                  aria-hidden="true"
-                />
-                <a
-                  href={"/me"}
-                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
-                >
-                  details!
-                </a>
-              </div>
-            </li>
-          </ol>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: "about", href: "/about" },
+            { label: "details!", href: "/me" },
+          ]}
+          listClassName="md:pl-4"
+        />
 
         <div className="mt-8 sm:mt-16 flex items-center justify-center flex-col ">
           <div

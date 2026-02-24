@@ -1,4 +1,4 @@
-import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
+import Breadcrumb from "../components/Breadcrumb";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
@@ -73,39 +73,13 @@ export default function About() {
       company: "Bearbella Team 21393",
     },
   ];
-  //TODO: make breadcrumb navigator a reusable component w/ prop for current icon and page
   return (
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 py-24">
-        <nav className="flex" aria-label="Breadcrumb">
-          <ol className="flex items-center space-x-4 pb-8  md:pl-4">
-            <li>
-              <div>
-                <a href="/" className="text-gray-400 hover:text-gray-500">
-                  <HomeIcon
-                    className="h-5 w-5 flex-shrink-0"
-                    aria-hidden="true"
-                  />
-                  <span className="sr-only">home</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRightIcon
-                  className="h-5 w-5 flex-shrink-0 text-gray-400"
-                  aria-hidden="true"
-                />
-                <a
-                  href={"/about"}
-                  className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700"
-                >
-                  about
-                </a>
-              </div>
-            </li>
-          </ol>
-        </nav>
+        <Breadcrumb
+          items={[{ label: "about", href: "/about" }]}
+          listClassName="md:pl-4"
+        />
         <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
           <div className="w-full md:flex md:flex-col md:justify-between">
             <div className="flex md:flex-row justify-between">
