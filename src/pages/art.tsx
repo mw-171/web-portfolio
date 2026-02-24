@@ -40,14 +40,14 @@ export default function Portfolio() {
                     <a
                       href={`/art/${encodeURIComponent(image.title || "untitled")}`}
                     >
-                      <Image // Replaced img with next/image
+                      <Image
                         src={image.src}
                         alt={image.alt}
-                        width={500} // You can adjust this
-                        height={300} // You can adjust this
+                        width={500}
+                        height={300}
                         className="w-full h-auto rounded shadow-md active:opacity-60 active:rounded-md"
                       />
-                      <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center">
+                      <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center px-4">
                         {image.title}
                       </div>
                     </a>
