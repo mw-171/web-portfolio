@@ -44,7 +44,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
-      <div className="px-8 md:px-24 lg:px-48 py-24 md:pb-36">
+      <div className="px-8 md:px-24 lg:px-48 pt-24">
         <Breadcrumb items={[{ label: "portfolio", href: "/portfolio" }]} />
         <div className="flex justify-center items-center pb-8">
           <span>a glimpse into some of my work ⊹ ࣪ ˖</span>

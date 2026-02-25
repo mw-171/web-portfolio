@@ -75,7 +75,7 @@ export default function About() {
   ];
   return (
     <div className="h-screen">
-      <div className="px-8 md:px-24 lg:px-48 py-24">
+      <div className="px-8 md:px-24 lg:px-48 pt-24">
         <Breadcrumb
           items={[{ label: "about", href: "/about" }]}
           listClassName="md:pl-4"

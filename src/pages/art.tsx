@@ -7,7 +7,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
-      <div className="px-8 md:px-24 lg:px-48 py-24">
+      <div className="px-8 md:px-24 lg:px-48 pt-24">
         <Breadcrumb items={[{ label: "art", href: "/art" }]} />
         <div className="flex justify-center items-center  pb-8 ">
           <span>

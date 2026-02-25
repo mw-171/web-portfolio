@@ -38,7 +38,7 @@ export default function Title() {
 
   return (
     <div className="h-screen">
-      <div className="px-8 md:px-24 lg:px-48 py-24">
+      <div className="px-8 md:px-24 lg:px-48 pt-24">
         <Breadcrumb
           items={[
             { label: "art", href: "/art" },
