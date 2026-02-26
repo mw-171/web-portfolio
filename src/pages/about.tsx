@@ -112,7 +112,7 @@ export default function About() {
                         ------8&lt;--------[{" "}
                         <a
                           href="/me"
-                          className="hover:border-b-2 hover:border-gray-300 scissor-cursor"
+                          className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
                         >
                           cut here
                         </a>{" "}
