@@ -4,6 +4,7 @@ import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
 import FancyLink from "../components/FancyLink";
 
+// TODO: add more details to job contributions
 export default function About() {
   const experience = [
     {

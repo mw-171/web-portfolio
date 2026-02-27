@@ -14,6 +14,7 @@ export default function Me() {
       setVisible(false);
     };
   }, []);
+  //TODO: add grid of videos/bereals/travel photos
   return (
     <>
       <div className="hidden md:block relative">

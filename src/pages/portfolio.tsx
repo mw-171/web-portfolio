@@ -41,6 +41,7 @@ const projects = [
   },
 ];
 
+//TODO: redo the layout/styling of this page
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
