@@ -95,7 +95,7 @@ export default function About() {
                 <div className="flex items-center">
                   <div className="flex flex-col gap-2">
                     <div className="font-semibold text-3xl">Hi, I'm Megan</div>
-                    <div>
+                    <div className="text-wrap:balance">
                       I'm an engineering student at the{" "}
                       <FancyLink href="https://uwaterloo.ca">
                         University of Waterloo
