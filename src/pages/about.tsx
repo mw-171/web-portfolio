@@ -81,121 +81,125 @@ export default function About() {
           items={[{ label: "about", href: "/about" }]}
           listClassName="md:pl-4"
         />
-        <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
-          <div className="w-full md:flex md:flex-col md:justify-between">
-            <div className="flex md:flex-row justify-between">
-              <div className="flex flex-row gap-5 w-4/5">
-                <div className="hidden md:block w-full h-full">
-                  <img
-                    src="/me.png"
-                    alt="vacation!"
-                    className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
-                  />
-                </div>
-                <div className="flex items-center">
-                  <div className="flex flex-col gap-2">
-                    <div className="font-semibold text-3xl">Hi, I'm Megan</div>
-                    <div className="text-wrap:balance">
-                      I'm an engineering student at the{" "}
-                      <FancyLink href="https://uwaterloo.ca">
-                        University of Waterloo
-                      </FancyLink>
-                      . In my free time, I love travelling, listening to{" "}
-                      <FancyLink href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb">
-                        music
-                      </FancyLink>
-                      , and creating{" "}
-                      <FancyLink href="/art" newTab={false}>
-                        art
-                      </FancyLink>
-                      . I am also an avid puzzle builder!
-                    </div>
-                    <div className="flex justify-start items-center">
-                      <div className="text-gray-400 hdmmdidden md:block pb-1">
-                        {" "}
-                        ------8&lt;--------[{" "}
-                        <a
-                          href="/me"
-                          className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
-                        >
-                          cut here
-                        </a>{" "}
-                        ]--------{" "}
+        <div className="px-4 md:px-0">
+          <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
+            <div className="w-full md:flex md:flex-col md:justify-between">
+              <div className="flex md:flex-row justify-between">
+                <div className="flex flex-row gap-5 w-4/5">
+                  <div className="hidden md:block w-full h-full">
+                    <img
+                      src="/me.png"
+                      alt="vacation!"
+                      className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
+                    />
+                  </div>
+                  <div className="flex items-center">
+                    <div className="flex flex-col gap-2">
+                      <div className="font-semibold text-3xl">
+                        Hi, I'm Megan
+                      </div>
+                      <div className="text-wrap:balance">
+                        I'm an engineering student at the{" "}
+                        <FancyLink href="https://uwaterloo.ca">
+                          University of Waterloo
+                        </FancyLink>
+                        . In my free time, I love travelling, listening to{" "}
+                        <FancyLink href="https://open.spotify.com/user/31sqpb6alkzs7qb2outw332i7rmi?si=9ab69246ea704ccb">
+                          music
+                        </FancyLink>
+                        , and creating{" "}
+                        <FancyLink href="/art" newTab={false}>
+                          art
+                        </FancyLink>
+                        . I am also an avid puzzle builder!
+                      </div>
+                      <div className="flex justify-start items-center">
+                        <div className="text-gray-400 hdmmdidden md:block pb-1">
+                          {" "}
+                          ------8&lt;--------[{" "}
+                          <a
+                            href="/me"
+                            className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
+                          >
+                            cut here
+                          </a>{" "}
+                          ]--------{" "}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* TODO: make this a reusable component? */}
-              <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0">
-                <div>
-                  <Link href="https://www.linkedin.com/in/megan-bx-wu/">
-                    Linkedin
-                  </Link>
-                </div>
-                <div>
-                  <Link href="https://github.com/mw-171">Github</Link>
-                </div>
-                <div>
-                  <Link href="mailto:m56wu@uwaterloo.ca">Email</Link>
+                {/* TODO: make this a reusable component? */}
+                <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0">
+                  <div>
+                    <Link href="https://www.linkedin.com/in/megan-bx-wu/">
+                      Linkedin
+                    </Link>
+                  </div>
+                  <div>
+                    <Link href="https://github.com/mw-171">Github</Link>
+                  </div>
+                  <div>
+                    <Link href="mailto:m56wu@uwaterloo.ca">Email</Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="mx-auto max-w-[650px] pt-4 pb-8">
-          <dl className="space-y-4 divide-y divide-gray-900/10">
-            {experience.map((experience) => (
-              <Disclosure as="div" key={experience.title} className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                        <span className="text-base font-semibold leading-7">
-                          {experience.title}
-                          {"  "}
-                          <span className="text-gray-400 font-normal italic pl-2">
-                            {experience.company}
+          <div className="mx-auto max-w-[650px] pt-4 pb-8">
+            <dl className="space-y-4 divide-y divide-gray-900/10">
+              {experience.map((experience) => (
+                <Disclosure as="div" key={experience.title} className="pt-6">
+                  {({ open }) => (
+                    <>
+                      <dt>
+                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                          <span className="text-base font-semibold leading-7">
+                            {experience.title}
+                            {"  "}
+                            <span className="text-gray-400 font-normal italic pl-2">
+                              {experience.company}
+                            </span>
                           </span>
-                        </span>
 
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusIcon
-                              className="h-5 w-5 hover:text-gray-400"
-                              aria-hidden="true"
-                            />
-                          ) : (
-                            <PlusIcon
-                              className="h-5 w-5 hover:text-gray-400"
-                              aria-hidden="true"
-                            />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <dt className="text-gray-500">{experience.date}</dt>
+                          <span className="ml-6 flex h-7 items-center">
+                            {open ? (
+                              <MinusIcon
+                                className="h-5 w-5 hover:text-gray-400"
+                                aria-hidden="true"
+                              />
+                            ) : (
+                              <PlusIcon
+                                className="h-5 w-5 hover:text-gray-400"
+                                aria-hidden="true"
+                              />
+                            )}
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <dt className="text-gray-500">{experience.date}</dt>
 
-                    <Transition
-                      enter="transition-all duration-200 ease-out"
-                      enterFrom="max-h-0 opacity-0"
-                      enterTo="max-h-96 opacity-100"
-                      leave="transition-all duration-150 ease-in"
-                      leaveFrom="max-h-96 opacity-100"
-                      leaveTo="max-h-0 opacity-0"
-                    >
-                      {" "}
-                      <Disclosure.Panel as="dd" className="pt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">
-                          {experience.description}
-                        </p>
-                      </Disclosure.Panel>
-                    </Transition>
-                  </>
-                )}
-              </Disclosure>
-            ))}
-          </dl>
+                      <Transition
+                        enter="transition-all duration-200 ease-out"
+                        enterFrom="max-h-0 opacity-0"
+                        enterTo="max-h-96 opacity-100"
+                        leave="transition-all duration-150 ease-in"
+                        leaveFrom="max-h-96 opacity-100"
+                        leaveTo="max-h-0 opacity-0"
+                      >
+                        {" "}
+                        <Disclosure.Panel as="dd" className="pt-2 pr-12">
+                          <p className="text-base leading-7 text-gray-600">
+                            {experience.description}
+                          </p>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
+          </div>
         </div>
       </div>
     </div>
