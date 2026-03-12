@@ -116,14 +116,14 @@ export default function About() {
                       <div className="flex justify-start items-center">
                         <div className="text-gray-400 hdmmdidden md:block pb-1">
                           {" "}
-                          ------8&lt;--------[{" "}
+                          ------8&lt;------[{" "}
                           <a
                             href="/me"
                             className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
                           >
                             cut here
                           </a>{" "}
-                          ]--------{" "}
+                          ]------{" "}
                         </div>
                       </div>
                     </div>
@@ -155,9 +155,9 @@ export default function About() {
                       <dt>
                         <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
                           <span className="text-base font-semibold leading-7">
-                            {experience.title}
+                            <span className="pr-2">{experience.title}</span>
                             {"  "}
-                            <span className="text-gray-400 font-normal italic pl-2">
+                            <span className="text-gray-400 font-normal italic">
                               {experience.company}
                             </span>
                           </span>
