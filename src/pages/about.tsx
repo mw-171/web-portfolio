@@ -116,14 +116,18 @@ export default function About() {
                       <div className="flex justify-start items-center">
                         <div className="text-gray-400 hdmmdidden md:block pb-1">
                           {" "}
-                          ------8&lt;------[{" "}
+                          ------8&lt;------
+                          <span className="hidden lg:inline">----</span>[{" "}
                           <a
                             href="/me"
                             className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
                           >
                             cut here
                           </a>{" "}
-                          ]------{" "}
+                          ]------
+                          <span className="hidden lg:inline">
+                            --------
+                          </span>{" "}
                         </div>
                       </div>
                     </div>
