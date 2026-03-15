@@ -99,7 +99,7 @@ export default function Portfolio() {
                   {project.technologies.slice(0, 3).map((tech: any) => (
                     <span
                       key={tech}
-                      className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg cursor-pointer"
+                      className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg hover:cursor-pointer"
                     >
                       {tech}
                     </span>

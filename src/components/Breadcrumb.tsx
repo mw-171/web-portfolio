@@ -22,7 +22,7 @@ export default function Breadcrumb({
     <nav className={cn("flex", className)} aria-label="Breadcrumb">
       <ol
         className={cn(
-          "flex items-center space-x-4 pb-8 pl-4 cursor-pointer",
+          "flex items-center space-x-4 pb-8 pl-4 hover:cursor-pointer",
           listClassName,
         )}
       >
