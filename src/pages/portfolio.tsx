@@ -76,7 +76,7 @@ export default function Portfolio() {
                   >
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="opacity-20 hover:text-violet-500"
+                      className="text-gray-400 hover:text-gray-500"
                     />
                   </a>
                   <a
@@ -86,7 +86,7 @@ export default function Portfolio() {
                   >
                     <FontAwesomeIcon
                       icon={faArrowUpRightFromSquare}
-                      className="opacity-20 hover:text-violet-500"
+                      className="text-gray-400 hover:text-gray-500"
                     />
                   </a>
                 </span>
