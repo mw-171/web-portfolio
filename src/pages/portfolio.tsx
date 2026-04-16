@@ -2,6 +2,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { SmoothImg } from "../components/SmoothImage";
 
 const projects = [
   {
@@ -57,10 +58,10 @@ export default function Portfolio() {
               className="group overflow-hidden rounded-lg border border-border bg-card hover:border-muted-foreground transition-all hover:shadow-lg"
             >
               <div className="relative w-full h-48 bg-muted overflow-hidden">
-                <img
+                <SmoothImg
                   src={project.src}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105"
                 />
               </div>
 

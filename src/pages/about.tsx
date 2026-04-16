@@ -3,6 +3,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
 import FancyLink from "../components/FancyLink";
+import { SmoothImg } from "../components/SmoothImage";
 
 // TODO: add more details to job contributions
 export default function About() {
@@ -87,7 +88,7 @@ export default function About() {
               <div className="flex md:flex-row justify-between">
                 <div className="flex flex-row gap-5 w-4/5">
                   <div className="hidden md:block w-full h-full">
-                    <img
+                    <SmoothImg
                       src="/me.png"
                       alt="vacation!"
                       className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
