@@ -1,6 +1,31 @@
 import Breadcrumb from "../components/Breadcrumb";
 import Image from "next/image";
 import { images } from "../lib/art";
+import { useState } from "react";
+
+function ArtImage({ image }: { image: any }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <div className="mb-4 relative active:bg-black active:rounded-md">
+      <a href={`/art/${encodeURIComponent(image.title || "untitled")}`}>
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={500}
+          height={300}
+          onLoad={() => setIsLoaded(true)}
+          className={`w-full h-auto rounded shadow-md active:opacity-60 active:rounded-md transition-opacity duration-500 ease-in-out ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center px-4">
+          {image.title}
+        </div>
+      </a>
+    </div>
+  );
+}
 
 export default function Portfolio() {
   const imagesPerColumn = Math.ceil(images.length / 4);
@@ -33,25 +58,7 @@ export default function Portfolio() {
                   (columnIndex + 1) * imagesPerColumn,
                 )
                 .map((image, index) => (
-                  <div
-                    key={index}
-                    className="mb-4 relative active:bg-black active:rounded-md"
-                  >
-                    <a
-                      href={`/art/${encodeURIComponent(image.title || "untitled")}`}
-                    >
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={500}
-                        height={300}
-                        className="w-full h-auto rounded shadow-md active:opacity-60 active:rounded-md"
-                      />
-                      <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center px-4">
-                        {image.title}
-                      </div>
-                    </a>
-                  </div>
+                  <ArtImage key={index} image={image} />
                 ))}
             </div>
           ))}
