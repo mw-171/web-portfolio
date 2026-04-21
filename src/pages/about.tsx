@@ -10,7 +10,7 @@ export default function About() {
   const experience = [
     {
       title: "Member of Technical Staff",
-      date: "Jan 2026 - Present",
+      date: "Jan 2026 - Apr 2026",
       description: (
         <>
           Automating operations at{" "}
@@ -21,7 +21,7 @@ export default function About() {
     },
     {
       title: "Software Engineer Intern",
-      date: "May 2025 - September 2025",
+      date: "May 2025 - Sept 2025",
       description: (
         <>
           Supporting local through a{" "}
@@ -61,7 +61,7 @@ export default function About() {
     },
     {
       title: "FIRST Robotics Co-Captain",
-      date: "Mar 2022 - June 2023",
+      date: "Mar 2022 - Jun 2023",
       description: (
         <>
           Founded and led a{" "}
