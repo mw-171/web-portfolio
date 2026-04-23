@@ -31,7 +31,7 @@ export default function About() {
       company: "Faire",
     },
     {
-      title: "AI Software Engineer Intern",
+      title: "Software Engineer Intern",
       date: "Sept 2024 - May 2025",
       description: "Building the next thing with really cool people :)",
       company: "1851 Labs",
