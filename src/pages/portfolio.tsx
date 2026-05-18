@@ -31,6 +31,14 @@ const projects = [
   },
   {
     id: 3,
+    title: "Sparks",
+    src: "sparks.png",
+    description: "A fun Hinge data visualizer 👀",
+    technologies: ["Typescript"],
+    website: "https://sparkss.vercel.app/",
+  },
+  {
+    id: 4,
     title: "To-done",
     src: "todonemockup.png",
     description:
@@ -39,6 +47,15 @@ const projects = [
     github: "https://github.com/mw-171/to-done",
     website:
       "https://marketplace.visualstudio.com/items?itemName=omega3.to-done",
+  },
+  {
+    id: 5,
+    title: "Split",
+    src: "split.png",
+    description:
+      "Easily keep track of expenses, split bills, and collect debts amongst friends!",
+    technologies: ["TypeScript", "Prisma"],
+    website: "https://split-0.vercel.app/",
   },
 ];
 
@@ -70,16 +87,18 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-foreground line-clamp-2">
                     {project.title}
                   </h3>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      className="text-gray-400 hover:text-gray-500"
-                    />
-                  </a>
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        className="text-gray-400 hover:text-gray-500"
+                      />
+                    </a>
+                  ) : null}
                   <a
                     href={project.website}
                     target="_blank"
