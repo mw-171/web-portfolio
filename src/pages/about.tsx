@@ -99,7 +99,7 @@ export default function About() {
                       <div className="font-semibold text-3xl text-gray-700">
                         Hi, I'm Megan
                       </div>
-                      <div className="text-wrap:balance text-gray-700">
+                      <div className="text-wrap:balance text-gray-700 pr-4 sm:pr-0">
                         I'm an engineering student at the{" "}
                         <FancyLink href="https://uwaterloo.ca">
                           University of Waterloo
