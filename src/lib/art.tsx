@@ -34,12 +34,13 @@ export const images = [
     date: "03/20/2022",
     media: "krita digital art",
   },
+
   {
-    src: "/art/twilight.png",
-    alt: "twilight art",
-    title: "a silly twilight fanart",
-    date: "08/20/2021",
-    media: "krita digital art",
+    src: "/art/lpslogo.png",
+    alt: "ballet logo",
+    title: "Ballet Studio Logo",
+    date: "06/04/2023",
+    media: "a digital logo designed by me for Le Premier School of Ballet",
   },
   {
     src: "/art/blue_sketch.JPG",
@@ -48,12 +49,13 @@ export const images = [
     date: "03/27/2024",
     media: "muji pens",
   },
+
   {
-    src: "/art/valentines.png",
-    alt: "valentines day art",
-    title: "fireworks",
-    date: "02/14/2024",
-    media: "procreate",
+    src: "/art/uncle.jpg",
+    alt: "uncle",
+    title: "old days",
+    date: "01/10/2022",
+    media: "krita digital art",
   },
   {
     src: "/art/tomi.jpg",
@@ -62,7 +64,84 @@ export const images = [
     date: "09/02/2022",
     media: "prismacolour pencil crayons",
   },
+ 
   {
+    src: "/art/11sketch.JPG",
+    alt: "sketch 11",
+    title: "page 11 of my sketchbook",
+    date: "03/20/2024",
+    media: "ink pens!",
+  },
+
+  {
+    src: "/art/torontotownhouse.JPG",
+    alt: "toronto townhouse",
+    title: "toronto townhouse",
+    date: "09/22/2025",
+    media: "procreate",
+  },
+  {
+    src: "/art/yearbookcover.jpg",
+    alt: "yearbook cover design",
+    title: "yearbook cover design @ BCI",
+    date: "10/29/2021",
+    media: "photoshop digital art",
+  },
+  {
+    src: "/art/twilight.png",
+    alt: "twilight art",
+    title: "a silly twilight fanart",
+    date: "08/20/2021",
+    media: "krita digital art",
+  },
+  {
+    src: "/art/shanghai_postcard.jpg",
+    alt: "shanghai postcard",
+    title: "shanghai postcard",
+    date: "04/23/2024",
+    media: "procreate",
+  },
+
+  {
+    src: "/art/valentines.png",
+    alt: "valentines day art",
+    title: "fireworks",
+    date: "02/14/2024",
+    media: "procreate",
+  },
+  {
+    src: "/art/butterflyback.jpg",
+    alt: "girl with a butterfly back",
+    title: "wings",
+    date: "04/27/2024",
+    media: "prismacolour pencils",
+  },
+  {
+    src: "/art/blue.jpeg",
+    alt: "blue butterflies",
+    title: "blue",
+    date: "07/10/2021",
+    media: "colour pencils",
+  },
+
+    {
+    src: "/art/Space_debris.jpg",
+    alt: "space debris",
+    title: "space debris advocacy poster",
+    date: "04/10/2025",
+    media: "procreate",
+  },
+
+  {
+    src: "/art/portugal.JPG",
+    alt: "europe architecture",
+    title: "architecture in europe",
+    date: "03/20/2024",
+    media: "winsor newton watercolour",
+  },
+
+
+ {
     src: "/art/gold.jpeg",
     alt: "gold",
     title: "gold",
@@ -77,83 +156,11 @@ export const images = [
     media: "winsor newton watercolour",
   },
   {
-    src: "/art/yearbookcover.jpg",
-    alt: "yearbook cover design",
-    title: "yearbook cover design @ BCI",
-    date: "10/29/2021",
-    media: "photoshop digital art",
-  },
-  {
-    src: "/art/Space_debris.jpg",
-    alt: "space debris",
-    title: "space debris advocacy poster",
-    date: "04/10/2025",
-    media: "procreate",
-  },
-  {
-    src: "/art/shanghai_postcard.jpg",
-    alt: "shanghai postcard",
-    title: "shanghai postcard",
-    date: "04/23/2024",
-    media: "procreate",
-  },
-  {
-    src: "/art/uncle.jpg",
-    alt: "uncle",
-    title: "old days",
-    date: "01/10/2022",
-    media: "krita digital art",
-  },
-  {
-    src: "/art/blue.jpeg",
-    alt: "blue butterflies",
-    title: "blue",
-    date: "07/10/2021",
-    media: "colour pencils",
-  },
-  {
-    src: "/art/portugal.JPG",
-    alt: "europe architecture",
-    title: "architecture in europe",
-    date: "03/20/2024",
-    media: "winsor newton watercolour",
-  },
-  {
-    src: "/art/lpslogo.png",
-    alt: "ballet logo",
-    title: "Ballet Studio Logo",
-    date: "06/04/2023",
-    media: "a digital logo designed by me for Le Premier School of Ballet",
-  },
-
-  {
-    src: "/art/torontotownhouse.JPG",
-    alt: "toronto townhouse",
-    title: "toronto townhouse",
-    date: "09/22/2025",
-    media: "procreate",
-  },
-  {
-    src: "/art/11sketch.JPG",
-    alt: "sketch 11",
-    title: "page 11 of my sketchbook",
-    date: "03/20/2024",
-    media: "ink pens!",
-  },
-
-  {
     src: "/art/red.jpeg",
     alt: "red",
     title: "filtered red",
     date: "05/16/2021",
     media: "pencil crayons",
-  },
-  {
-    src: "/art/butterflyback.jpg",
-    alt: "girl with a butterfly back",
-    title: "wings",
-    date: "04/27/2024",
-    media: "prismacolour pencils",
   },
   {
     src: "/art/watercolour.JPG",
