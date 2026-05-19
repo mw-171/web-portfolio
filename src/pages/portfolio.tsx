@@ -1,4 +1,5 @@
 import Breadcrumb from "../components/Breadcrumb";
+import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -66,11 +67,15 @@ const projects = [
 
 //TODO: redo the layout/styling of this page
 export default function Portfolio() {
+  const router = useRouter();
+  const from = Array.isArray(router.query.from)
+    ? router.query.from[0]
+    : router.query.from;
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
       <div className="pt-24">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb items={[{ label: "portfolio", href: "/portfolio" }]} />
+          <Breadcrumb page="portfolio" from={from as string | undefined} />
           <div className="flex justify-center items-center pb-8 text-gray-500">
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
           </div>

@@ -4,6 +4,7 @@ import LoadingSpinner from "../../components/loadingSpinner";
 import { useEffect, useState } from "react";
 import { images } from "../../lib/art";
 import { ImageType } from "../../types/types";
+// breadcrumb generator used by the Breadcrumb component; not needed directly here
 
 export default function Title() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,13 @@ export default function Title() {
   } else if (Array.isArray(router.query.title)) {
     title = router.query.title[0];
   }
+
+  const from = Array.isArray(router.query.from)
+    ? router.query.from[0]
+    : router.query.from;
+
+  // Breadcrumb will compute items when given page hint and title
+  // this keeps page files minimal and avoids duplicating arrays
 
   useEffect(() => {
     const fetchImage = async () => {
@@ -39,12 +47,7 @@ export default function Title() {
   return (
     <div className="h-screen">
       <div className="px-8 md:px-24 lg:px-48 pt-24">
-        <Breadcrumb
-          items={[
-            { label: "art", href: "/art" },
-            { label: title || "untitled", href: "/projects" },
-          ]}
-        />
+        <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
         {/* TODO: consider making this a modal instead - use this logic for projects */}
         <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
           <div className="md:w-1/2 flex items-center justify-end">

@@ -1,11 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Breadcrumb from "../components/Breadcrumb";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import { images } from "../lib/bereals";
 
 export default function Me() {
+  const router = useRouter();
+  const from = Array.isArray(router.query.from)
+    ? router.query.from[0]
+    : router.query.from;
+
+
   const [isVisible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -41,13 +48,7 @@ export default function Me() {
         </div>
       </div>
       <div className="pt-24 px-8 md:px-24 lg:px-48 flex justify-center flex-col ">
-        <Breadcrumb
-          items={[
-            { label: "about", href: "/about" },
-            { label: "details!", href: "/me" },
-          ]}
-          listClassName="md:pl-4"
-        />
+        <Breadcrumb page="me" from={from as string | undefined} listClassName="md:pl-4" />
 
         <div className="mt-8 sm:mt-16 flex items-center justify-center flex-col ">
           <div

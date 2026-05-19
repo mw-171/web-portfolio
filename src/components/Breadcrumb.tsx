@@ -1,6 +1,8 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import type { ReactNode } from "react";
 import { cn } from "../lib/utils";
+import { useRouter } from "next/router";
+import { getBreadcrumbs } from "../lib/breadcrumbs";
 
 type BreadcrumbItem = {
   label: ReactNode;
@@ -8,16 +10,29 @@ type BreadcrumbItem = {
 };
 
 type BreadcrumbProps = {
-  items: BreadcrumbItem[];
+  items?: BreadcrumbItem[];
+  page?: string; // optional page hint, e.g. 'artDetail'
+  title?: string;
+  from?: string;
   className?: string;
   listClassName?: string;
 };
 
 export default function Breadcrumb({
   items,
+  page,
+  title,
+  from,
   className,
   listClassName,
 }: BreadcrumbProps) {
+  const router = useRouter();
+
+  const computedItems: BreadcrumbItem[] =
+    items && items.length > 0
+      ? items
+      : // prefer explicit props, otherwise derive from router.asPath
+        (getBreadcrumbs({ page, title, from, path: router.asPath }) as BreadcrumbItem[]);
   return (
     <nav className={cn("flex", className)} aria-label="Breadcrumb">
       <ol
@@ -35,9 +50,8 @@ export default function Breadcrumb({
           </div>
         </li>
 
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1;
-
+        {computedItems.map((item, index) => {
+          const isLastComputed = index === computedItems.length - 1;
           return (
             <li key={`${item.href}-${index}`}>
               <div className="flex items-center">
@@ -47,7 +61,7 @@ export default function Breadcrumb({
                 />
                 <a
                   href={item.href}
-                  aria-current={isLast ? "page" : undefined}
+                  aria-current={isLastComputed ? "page" : undefined}
                   className="ml-4 text-md font-medium text-gray-500 hover:text-gray-700 hover:cursor-pointer"
                 >
                   {item.label}

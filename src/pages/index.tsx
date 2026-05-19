@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex items-center space-x-1 sm:space-x-4 pt-4">
           <div>
             <a
-              href="/about"
+              href="/about?from=home"
               className="pl-0 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               <span>about</span>
@@ -27,7 +27,7 @@ export default function Home() {
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
             <a
-              href="/portfolio"
+              href="/portfolio?from=home"
               className="pl-1 sm:pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               portfolio
@@ -43,7 +43,7 @@ export default function Home() {
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
             </svg>
             <a
-              href="/art"
+              href="/art?from=home"
               className="pl-1 sm:pl-4 text-sm font-medium text-gray-400 hover:text-gray-700"
             >
               art

@@ -1,13 +1,21 @@
 import Breadcrumb from "../components/Breadcrumb";
+import { useRouter } from "next/router";
 import { images } from "../lib/art";
 import { SmoothNextImage } from "../components/SmoothImage";
 
 export default function Portfolio() {
+  const router = useRouter();
+  const from = Array.isArray(router.query.from)
+    ? router.query.from[0]
+    : router.query.from;
+
+  const fromParam = from ? `?from=${from}` : "";
+
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
       <div className="pt-24">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb items={[{ label: "art", href: "/art" }]} />
+          <Breadcrumb page="art" from={from as string | undefined} />
           <div className="flex justify-center items-center pb-8 text-gray-500">
             <span>
               a collection of my{" "}
@@ -30,7 +38,7 @@ export default function Portfolio() {
                 className="break-inside-avoid mb-4 relative active:bg-black"
               >
                 <a
-                  href={`/art/${encodeURIComponent(image.title || "untitled")}`}
+                  href={`/art/${encodeURIComponent(image.title || "untitled")}${fromParam}`}
                 >
                   <SmoothNextImage
                     src={image.src}

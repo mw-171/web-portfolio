@@ -4,9 +4,15 @@ import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import Link from "../components/Link";
 import FancyLink from "../components/FancyLink";
 import { SmoothImg } from "../components/SmoothImage";
+import { useRouter } from "next/router";
 
 // TODO: add more details to job contributions
 export default function About() {
+  const router = useRouter();
+  const from = Array.isArray(router.query.from)
+    ? router.query.from[0]
+    : router.query.from;
+
   const experience = [
     {
       title: "Member of Technical Staff",
@@ -80,7 +86,8 @@ export default function About() {
       <div className="pt-24">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb
-            items={[{ label: "about", href: "/about" }]}
+            page="about"
+            from={from as string | undefined}
             // listClassName="md:pl-4"
           />
           <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center sm:pt-8">
@@ -109,7 +116,7 @@ export default function About() {
                           music
                         </FancyLink>
                         , and creating{" "}
-                        <FancyLink href="/art" newTab={false}>
+                        <FancyLink href="/art?from=about" newTab={false}>
                           art
                         </FancyLink>
                         . I am also an avid puzzle builder!
@@ -120,7 +127,7 @@ export default function About() {
                           ------8&lt;------
                           <span className="hidden lg:inline">----</span>[{" "}
                           <a
-                            href="/me"
+                            href="/me?from=about"
                             className="hover:border-b-2 hover:text-violet-300 hover:border-violet-200 scissor-cursor"
                           >
                             cut here
