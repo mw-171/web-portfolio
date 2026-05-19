@@ -83,7 +83,7 @@ export default function About() {
   ];
   return (
     <div className="min-h-screen">
-      <div className="pt-24">
+      <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb
             page="about"

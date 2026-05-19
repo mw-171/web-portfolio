@@ -47,7 +47,7 @@ export default function Me() {
           />
         </div>
       </div>
-      <div className="pt-24 px-8 md:px-24 lg:px-48 flex justify-center flex-col ">
+      <div className="pt-8 px-4 mx-auto max-w-[720px] flex justify-center flex-col ">
         <Breadcrumb page="me" from={from as string | undefined} listClassName="md:pl-4" />
 
         <div className="mt-8 sm:mt-16 flex items-center justify-center flex-col ">

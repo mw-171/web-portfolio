@@ -46,7 +46,7 @@ export default function Title() {
 
   return (
     <div className="h-screen">
-      <div className="pt-24">
+      <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
           {/* TODO: consider making this a modal instead - use this logic for projects */}

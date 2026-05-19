@@ -73,7 +73,7 @@ export default function Portfolio() {
     : router.query.from;
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
-      <div className="pt-24">
+      <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb page="portfolio" from={from as string | undefined} />
           <div className="flex justify-center items-center pb-8 text-gray-500">
