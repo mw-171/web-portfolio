@@ -9,8 +9,10 @@ const projects = [
     id: 1,
     title: "Hack the North",
     src: "hackthenorthmockup.png",
-    description: "Static site for Canada's largest hackathon",
-    technologies: ["React", "Typescript", "Styled components"],
+    caption: "Canada's largest hackathon",
+    description:
+      "Frontend organizer for the main static site & application portal",
+    technologies: ["Typescript", "Styled components"],
     github: "https://github.com/hackthenorth/2024.hackthenorth.com",
     website: "https://2024.hackthenorth.com/",
   },
@@ -18,7 +20,8 @@ const projects = [
     id: 2,
     title: "VoCal",
     src: "vocalmockup.png",
-    description: "An AI voice-to-text scheduling app",
+    caption: "AI voice-to-text scheduling",
+    description: "Simplify creating calendar events",
     technologies: [
       "TypeScript",
       "Whisper",
@@ -33,7 +36,8 @@ const projects = [
     id: 3,
     title: "Sparks",
     src: "sparks.png",
-    description: "A fun Hinge data visualizer 👀",
+    caption: "Hinge data visualizer",
+    description: "A fun way to learn more about your Hinge statistics 👀",
     technologies: ["Typescript"],
     github: "https://github.com/mw-171/sparks",
     website: "https://sparkss.vercel.app/",
@@ -42,8 +46,8 @@ const projects = [
     id: 4,
     title: "To-done",
     src: "todonemockup.png",
-    description:
-      "A vscode extension that makes tracking inline TODO comments easy as pie",
+    caption: "Inline TODOs tracker",
+    description: "A vscode extension that makes tracking TODOs easy as pie",
     technologies: ["Node.js", "TypeScript"],
     github: "https://github.com/mw-171/to-done",
     website:
@@ -53,8 +57,8 @@ const projects = [
     id: 5,
     title: "Split",
     src: "split.png",
-    description:
-      "Easily keep track of expenses, split bills, and collect debts amongst friends!",
+    caption: "Expense splitting app",
+    description: "Easily track expenses and collect debts amongst friends 💸",
     technologies: ["TypeScript", "Prisma"],
     website: "https://split-0.vercel.app/",
   },
@@ -71,70 +75,74 @@ export default function Portfolio() {
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="group overflow-hidden rounded-lg border border-border bg-card hover:border-muted-foreground transition-all hover:shadow-lg"
-              >
-                <div className="relative w-full h-36 bg-muted overflow-hidden">
-                  <SmoothImg
-                    src={project.src}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105"
-                  />
-                </div>
+            {projects.map((project) => {
+              return (
+                <div key={project.id} className="group flex flex-col">
+                  <div className="relative w-full h-36 bg-muted overflow-hidden">
+                    <SmoothImg
+                      src={project.src}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
 
-                <div className="px-5 py-5 sm:pb-2 sm:pt-5">
-                  <span className="flex gap-2 items-center mb-2 ">
-                    <h3 className="text-lg font-semibold text-foreground line-clamp-2">
-                      {project.title}
-                    </h3>
-                    {project.github ? (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithub}
-                          className="text-gray-400 hover:text-gray-500"
-                        />
-                      </a>
-                    ) : null}
-                    <a
-                      href={project.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        icon={faArrowUpRightFromSquare}
-                        className="text-gray-400 hover:text-gray-500"
-                      />
-                    </a>
-                  </span>
+                    {/* Hover overlay content */}
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex flex-col justify-end p-3 opacity-0 group-hover:opacity-100">
+                      <p className="text-xs text-gray-300 mb-2 line-clamp-2">
+                        {project.description}
+                      </p>
 
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                    {project.description}
-                  </p>
+                      <div className="flex flex-wrap gap-1 mb-2">
+                        {project.technologies.slice(0, 3).map((tech: any) => (
+                          <span
+                            key={tech}
+                            className="inline-block px-1.5 py-0.5 text-gray-300 text-xs rounded bg-gray-700 bg-opacity-50"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                        {project.technologies.length > 3 && (
+                          <span className="inline-block px-1.5 py-0.5 text-gray-300 text-xs">
+                            +{project.technologies.length - 3}
+                          </span>
+                        )}
+                      </div>
 
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {project.technologies.slice(0, 3).map((tech: any) => (
-                      <span
-                        key={tech}
-                        className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg cursor-pointer"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="inline-block px-2 py-1 text-muted-foreground text-xs">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
+                      <div className="flex gap-2 items-center">
+                        {project.github ? (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FontAwesomeIcon
+                              icon={faGithub}
+                              className="text-gray-300 hover:text-white text-sm"
+                            />
+                          </a>
+                        ) : null}
+                        <a
+                          href={project.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faArrowUpRightFromSquare}
+                            className="text-gray-300 hover:text-white text-sm"
+                          />
+                        </a>
+                      </div>
+                    </div>
                   </div>
+
+                  <h3 className="text-sm font-semibold text-foreground mt-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-1">
+                    {project.caption}
+                  </p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
