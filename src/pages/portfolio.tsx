@@ -74,11 +74,11 @@ export default function Portfolio() {
           <div className="flex justify-center items-center pb-8">
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
           </div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4">
             {projects.map((project) => {
               return (
                 <div key={project.id} className="group flex flex-col">
-                  <div className="relative w-full h-36 bg-muted overflow-hidden">
+                  <div className="relative w-full h-48 sm:h-36 bg-muted overflow-hidden">
                     <SmoothImg
                       src={project.src}
                       alt={project.title}
@@ -86,8 +86,8 @@ export default function Portfolio() {
                     />
 
                     {/* Hover overlay content */}
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex flex-col justify-end p-3 opacity-0 group-hover:opacity-100">
-                      <p className="text-xs text-gray-300 mb-2 line-clamp-2">
+                    <div className="absolute inset-0 bg-gray-800 bg-opacity-75 transition-opacity duration-300 flex flex-col justify-end py-3 px-4 sm:px-3 opacity-0 group-hover:opacity-100">
+                      <p className="text-xs text-gray-300 mb-2 line-clamp-2 pr-24 sm:pr-0">
                         {project.description}
                       </p>
 
@@ -95,7 +95,7 @@ export default function Portfolio() {
                         {project.technologies.slice(0, 3).map((tech: any) => (
                           <span
                             key={tech}
-                            className="inline-block px-1.5 py-0.5 text-gray-300 text-xs rounded bg-gray-700 bg-opacity-50"
+                            className="inline-block px-1.5 py-0.5 text-gray-300 text-xs rounded bg-gray-800 bg-opacity-50"
                           >
                             {tech}
                           </span>
