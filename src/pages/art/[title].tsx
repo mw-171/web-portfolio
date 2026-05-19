@@ -54,7 +54,7 @@ export default function Title() {
               className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
             />
           </div>
-          <div className="md:w-1/4 flex flex-col justify-start gap-4 text-gray-600">
+          <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
             <div className="font-semibold">{title}</div>
             <div className="italic">{image?.media}</div>
             <div className="">{image?.date}</div>
