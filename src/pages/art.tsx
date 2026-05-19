@@ -27,7 +27,7 @@ export default function Portfolio() {
             {images.map((image) => (
               <div
                 key={image.title}
-                className="break-inside-avoid mb-4 relative active:bg-black active:rounded-md"
+                className="break-inside-avoid mb-4 relative active:bg-black"
               >
                 <a
                   href={`/art/${encodeURIComponent(image.title || "untitled")}`}
@@ -37,9 +37,9 @@ export default function Portfolio() {
                     alt={image.alt}
                     width={500}
                     height={300}
-                    className="w-full h-auto rounded shadow-md active:opacity-60 active:rounded-md"
+                    className="w-full h-auto shadow-md active:opacity-60"
                   />
-                  <div className="absolute inset-0 flex items-center rounded-md justify-center opacity-0 hover:rounded-md hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center px-4">
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray-800 bg-opacity-65 text-white text-center px-4">
                     {image.title}
                   </div>
                 </a>
