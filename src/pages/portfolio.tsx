@@ -35,6 +35,7 @@ const projects = [
     src: "sparks.png",
     description: "A fun Hinge data visualizer 👀",
     technologies: ["Typescript"],
+    github: "https://github.com/mw-171/sparks",
     website: "https://sparkss.vercel.app/",
   },
   {
