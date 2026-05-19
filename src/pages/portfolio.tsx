@@ -71,7 +71,7 @@ export default function Portfolio() {
       <div className="pt-24">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb items={[{ label: "portfolio", href: "/portfolio" }]} />
-          <div className="flex justify-center items-center pb-8">
+          <div className="flex justify-center items-center pb-8 text-gray-500">
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4">
@@ -134,10 +134,10 @@ export default function Portfolio() {
                     </div>
                   </div>
 
-                  <h3 className="text-sm font-semibold text-foreground mt-2">
+                  <h3 className="text-sm font-semibold text-foreground mt-2 text-gray-700">
                     {project.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground line-clamp-1">
+                  <p className="text-xs text-muted-foreground line-clamp-1 text-gray-500">
                     {project.caption}
                   </p>
                 </div>

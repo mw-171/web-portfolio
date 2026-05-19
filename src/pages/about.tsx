@@ -96,10 +96,10 @@ export default function About() {
                   </div>
                   <div className="flex items-center">
                     <div className="flex flex-col gap-2">
-                      <div className="font-semibold text-3xl">
+                      <div className="font-semibold text-3xl text-gray-700">
                         Hi, I'm Megan
                       </div>
-                      <div className="text-wrap:balance">
+                      <div className="text-wrap:balance text-gray-700">
                         I'm an engineering student at the{" "}
                         <FancyLink href="https://uwaterloo.ca">
                           University of Waterloo
@@ -135,7 +135,7 @@ export default function About() {
                   </div>
                 </div>
                 {/* TODO: make this a reusable component? */}
-                <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0">
+                <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0 text-gray-700">
                   <div>
                     <Link href="https://www.linkedin.com/in/megan-bx-wu/">
                       Linkedin
@@ -160,7 +160,9 @@ export default function About() {
                       <dt>
                         <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
                           <span className="text-base font-semibold leading-7">
-                            <span className="pr-2">{experience.title}</span>
+                            <span className="pr-2 text-gray-700">
+                              {experience.title}
+                            </span>
                             {"  "}
                             <span className="text-gray-400 font-normal italic">
                               {experience.company}

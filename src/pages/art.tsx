@@ -8,7 +8,7 @@ export default function Portfolio() {
       <div className="pt-24">
         <div className="mx-auto max-w-[720px] px-4">
           <Breadcrumb items={[{ label: "art", href: "/art" }]} />
-          <div className="flex justify-center items-center pb-8">
+          <div className="flex justify-center items-center pb-8 text-gray-500">
             <span>
               a collection of my{" "}
               <span className="serif-font italic">
