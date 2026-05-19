@@ -61,13 +61,13 @@ export default function Me() {
             you've discovered an easter egg 🐣(wip)
           </div>
         </div>
-        <div className="pt-12 md:pt-48 flex items-start justify-center flex-col">
-          <div className="text-3xl text-gray-700 font-semibold z-20">
-            a peek into my daily life!
+        <div className="pt-12 md:pt-48 flex items-center sm:items-start justify-center flex-col">
+          <div className="text-xl text-gray-700 font-semibold z-20">
+            here's a peek into my daily life!
           </div>
         </div>
       </div>
-      <div className="h-[20rem] sm:h-[25rem] mb-8 rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
+      <div className="h-[20rem] sm:h-[20rem] mb-8 rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards images={images} direction="right" speed="normal" />
       </div>
     </>

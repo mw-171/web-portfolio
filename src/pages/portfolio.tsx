@@ -63,76 +63,78 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-cover bg-center overflow-auto">
-      <div className="px-8 md:px-24 lg:px-48 pt-24">
-        <Breadcrumb items={[{ label: "portfolio", href: "/portfolio" }]} />
-        <div className="flex justify-center items-center pb-8">
-          <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-6">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group overflow-hidden rounded-lg border border-border bg-card hover:border-muted-foreground transition-all hover:shadow-lg"
-            >
-              <div className="relative w-full h-48 bg-muted overflow-hidden">
-                <SmoothImg
-                  src={project.src}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105"
-                />
-              </div>
+      <div className="pt-24">
+        <div className="mx-auto max-w-[720px] px-4">
+          <Breadcrumb items={[{ label: "portfolio", href: "/portfolio" }]} />
+          <div className="flex justify-center items-center pb-8">
+            <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
+          </div>
+          <div className="grid grid-cols-3 gap-4">
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                className="group overflow-hidden rounded-lg border border-border bg-card hover:border-muted-foreground transition-all hover:shadow-lg"
+              >
+                <div className="relative w-full h-36 bg-muted overflow-hidden">
+                  <SmoothImg
+                    src={project.src}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105"
+                  />
+                </div>
 
-              <div className="px-5 py-5 sm:pb-2 sm:pt-5">
-                <span className="flex gap-2 items-center mb-2 ">
-                  <h3 className="text-lg font-semibold text-foreground line-clamp-2">
-                    {project.title}
-                  </h3>
-                  {project.github ? (
+                <div className="px-5 py-5 sm:pb-2 sm:pt-5">
+                  <span className="flex gap-2 items-center mb-2 ">
+                    <h3 className="text-lg font-semibold text-foreground line-clamp-2">
+                      {project.title}
+                    </h3>
+                    {project.github ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithub}
+                          className="text-gray-400 hover:text-gray-500"
+                        />
+                      </a>
+                    ) : null}
                     <a
-                      href={project.github}
+                      href={project.website}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon
-                        icon={faGithub}
+                        icon={faArrowUpRightFromSquare}
                         className="text-gray-400 hover:text-gray-500"
                       />
                     </a>
-                  ) : null}
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faArrowUpRightFromSquare}
-                      className="text-gray-400 hover:text-gray-500"
-                    />
-                  </a>
-                </span>
+                  </span>
 
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                  {project.description}
-                </p>
+                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {project.technologies.slice(0, 3).map((tech: any) => (
-                    <span
-                      key={tech}
-                      className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg hover:gcursor-pointer"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                  {project.technologies.length > 3 && (
-                    <span className="inline-block px-2 py-1 text-muted-foreground text-xs">
-                      +{project.technologies.length - 3}
-                    </span>
-                  )}
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {project.technologies.slice(0, 3).map((tech: any) => (
+                      <span
+                        key={tech}
+                        className="inline-block px-2 py-1 hover:bg-violet-50 text-muted-foreground text-xs rounded-lg cursor-pointer"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                    {project.technologies.length > 3 && (
+                      <span className="inline-block px-2 py-1 text-muted-foreground text-xs">
+                        +{project.technologies.length - 3}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -77,13 +77,13 @@ export default function About() {
   ];
   return (
     <div className="min-h-screen">
-      <div className="px-8 md:px-24 lg:px-48 pt-24">
-        <Breadcrumb
-          items={[{ label: "about", href: "/about" }]}
-          listClassName="md:pl-4"
-        />
-        <div className="px-4 md:px-0">
-          <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center pt-8 mx-auto max-w-[650px]">
+      <div className="pt-24">
+        <div className="mx-auto max-w-[720px] px-4">
+          <Breadcrumb
+            items={[{ label: "about", href: "/about" }]}
+            // listClassName="md:pl-4"
+          />
+          <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center sm:pt-8">
             <div className="w-full md:flex md:flex-col md:justify-between">
               <div className="flex md:flex-row justify-between">
                 <div className="flex flex-row gap-5 w-4/5">
@@ -151,7 +151,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="mx-auto max-w-[650px] pt-4 pb-8">
+          <div className="pt-4 pb-8">
             <dl className="space-y-4 divide-y divide-gray-900/10">
               {experience.map((experience) => (
                 <Disclosure as="div" key={experience.title} className="pt-6">
