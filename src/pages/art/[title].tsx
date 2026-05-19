@@ -46,21 +46,23 @@ export default function Title() {
 
   return (
     <div className="h-screen">
-      <div className="px-8 md:px-24 lg:px-48 pt-24">
-        <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
-        {/* TODO: consider making this a modal instead - use this logic for projects */}
-        <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
-          <div className="md:w-1/2 flex items-center justify-end">
-            <img
-              src={image?.src}
-              alt={image?.alt}
-              className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
-            />
-          </div>
-          <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
-            <div className="font-semibold">{title}</div>
-            <div className="italic">{image?.media}</div>
-            <div className="">{image?.date}</div>
+      <div className="pt-24">
+        <div className="mx-auto max-w-[720px] px-4">
+          <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
+          {/* TODO: consider making this a modal instead - use this logic for projects */}
+          <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
+            <div className="md:w-1/2 flex items-center justify-end">
+              <img
+                src={image?.src}
+                alt={image?.alt}
+                className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
+              />
+            </div>
+            <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
+              <div className="font-semibold">{title}</div>
+              <div className="italic">{image?.media}</div>
+              <div className="">{image?.date}</div>
+            </div>
           </div>
         </div>
       </div>
