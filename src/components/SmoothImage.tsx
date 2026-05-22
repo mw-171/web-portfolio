@@ -3,6 +3,7 @@ import Image, { ImageProps } from "next/image";
 
 export function SmoothImg({
   className,
+  style,
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement>) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,17 +16,22 @@ export function SmoothImg({
   }, []);
 
   return (
-    <img
-      {...props}
-      ref={imgRef}
-      onLoad={(e) => {
-        setIsLoaded(true);
-        if (props.onLoad) props.onLoad(e);
-      }}
-      className={`${className || ""} transition-all duration-500 ease-in-out ${
-        isLoaded ? "opacity-100" : "opacity-0"
-      }`}
-    />
+    <div className="relative" style={style}>
+      {!isLoaded && (
+        <div className="absolute inset-0 animate-pulse bg-gray-200 rounded" />
+      )}
+      <img
+        {...props}
+        ref={imgRef}
+        onLoad={(e) => {
+          setIsLoaded(true);
+          if (props.onLoad) props.onLoad(e);
+        }}
+        className={`${className || ""} transition-opacity duration-500 ease-in-out ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    </div>
   );
 }
 
@@ -40,16 +46,21 @@ export function SmoothNextImage({ className, ...props }: ImageProps) {
   }, []);
 
   return (
-    <Image
-      {...props}
-      ref={imgRef}
-      onLoad={(e) => {
-        setIsLoaded(true);
-        if (props.onLoad) props.onLoad(e);
-      }}
-      className={`${className || ""} transition-all duration-500 ease-in-out ${
-        isLoaded ? "opacity-100" : "opacity-0"
-      }`}
-    />
+    <div className="relative w-full">
+      {!isLoaded && (
+        <div className="absolute inset-0 animate-pulse bg-gray-200 rounded" />
+      )}
+      <Image
+        {...props}
+        ref={imgRef}
+        onLoad={(e) => {
+          setIsLoaded(true);
+          if (props.onLoad) props.onLoad(e);
+        }}
+        className={`${className || ""} transition-opacity duration-500 ease-in-out ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    </div>
   );
 }

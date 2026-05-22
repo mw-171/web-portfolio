@@ -4,6 +4,7 @@ import LoadingSpinner from "../../components/loadingSpinner";
 import { useEffect, useState } from "react";
 import { images } from "../../lib/art";
 import { ImageType } from "../../types/types";
+import { SmoothImg } from "../../components/SmoothImage";
 // breadcrumb generator used by the Breadcrumb component; not needed directly here
 
 export default function Title() {
@@ -52,10 +53,10 @@ export default function Title() {
           {/* TODO: consider making this a modal instead - use this logic for projects */}
           <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
             <div className="md:w-1/2 flex items-center justify-end">
-              <img
+              <SmoothImg
                 src={image?.src}
                 alt={image?.alt}
-                className=" h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
+                className="h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
               />
             </div>
             <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
