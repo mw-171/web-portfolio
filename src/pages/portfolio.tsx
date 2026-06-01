@@ -87,6 +87,7 @@ export default function Portfolio() {
                     <SmoothImg
                       src={project.src}
                       alt={project.title}
+                      containerClassName="w-full h-full"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     />
 

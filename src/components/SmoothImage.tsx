@@ -4,8 +4,9 @@ import Image, { ImageProps } from "next/image";
 export function SmoothImg({
   className,
   style,
+  containerClassName,
   ...props
-}: React.ImgHTMLAttributes<HTMLImageElement>) {
+}: React.ImgHTMLAttributes<HTMLImageElement> & { containerClassName?: string }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -16,7 +17,7 @@ export function SmoothImg({
   }, []);
 
   return (
-    <div className="relative" style={style}>
+    <div className={`relative ${containerClassName || ""}`} style={style}>
       {!isLoaded && (
         <div className="absolute inset-0 animate-pulse bg-gray-200 rounded" />
       )}
@@ -35,7 +36,7 @@ export function SmoothImg({
   );
 }
 
-export function SmoothNextImage({ className, ...props }: ImageProps) {
+export function SmoothNextImage({ className, containerClassName, ...props }: ImageProps & { containerClassName?: string }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -46,7 +47,7 @@ export function SmoothNextImage({ className, ...props }: ImageProps) {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className={`relative w-full ${containerClassName || ""}`}>
       {!isLoaded && (
         <div className="absolute inset-0 animate-pulse bg-gray-200 rounded" />
       )}

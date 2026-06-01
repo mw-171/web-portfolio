@@ -98,6 +98,7 @@ export default function About() {
                     <SmoothImg
                       src="/me.png"
                       alt="vacation!"
+                      containerClassName="w-full h-full max-h-[200px]"
                       className="w-full min-w-[120px] h-full object-cover max-h-[200px]"
                     />
                   </div>
