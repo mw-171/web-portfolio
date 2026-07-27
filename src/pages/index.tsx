@@ -1,15 +1,21 @@
 import { Analytics } from "@vercel/analytics/react";
+import { revealProps } from "../components/Reveal";
 
 export default function Home() {
   return (
     <>
       <Analytics />
       <div className="flex flex-col justify-center items-center py-72 sm:px-48 sm:py-80">
-        <div className="text-5xl text-gray-700 font-semibold">
+        <div
+          {...revealProps(
+            0,
+            "reveal-lead text-5xl text-gray-700 font-semibold",
+          )}
+        >
           hi, i'm <span className="serif-font italic">megan</span>
         </div>
         <div className="flex items-center space-x-1 sm:space-x-4 pt-4">
-          <div>
+          <div {...revealProps(3)}>
             <a
               href="/about?from=home"
               className="pl-0 text-sm font-medium text-gray-400 hover:text-gray-700"
@@ -17,7 +23,7 @@ export default function Home() {
               <span>about</span>
             </a>
           </div>
-          <div className="flex items-center">
+          <div {...revealProps(4, "flex items-center")}>
             <svg
               className="h-5 w-5 flex-shrink-0 text-gray-300"
               fill="currentColor"
@@ -33,7 +39,7 @@ export default function Home() {
               portfolio
             </a>
           </div>
-          <div className="flex items-center">
+          <div {...revealProps(5, "flex items-center")}>
             <svg
               className="h-5 w-5 flex-shrink-0 text-gray-300"
               fill="currentColor"
@@ -54,4 +60,3 @@ export default function Home() {
     </>
   );
 }
-

@@ -5,6 +5,7 @@ import Link from "../components/Link";
 import FancyLink from "../components/FancyLink";
 import { SmoothImg } from "../components/SmoothImage";
 import { useRouter } from "next/router";
+import { Reveal, revealProps } from "../components/Reveal";
 
 // TODO: add more details to job contributions
 export default function About() {
@@ -85,16 +86,18 @@ export default function About() {
     <div className="min-h-screen">
       <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb
-            page="about"
-            from={from as string | undefined}
-            // listClassName="md:pl-4"
-          />
+          <Reveal index={0}>
+            <Breadcrumb
+              page="about"
+              from={from as string | undefined}
+              // listClassName="md:pl-4"
+            />
+          </Reveal>
           <div className="flex justify-center md:gap-0 md:pl-0 md:justify-start items-center sm:pt-8">
             <div className="w-full md:flex md:flex-col md:justify-between">
               <div className="flex md:flex-row justify-between">
                 <div className="flex flex-row gap-5 w-4/5">
-                  <div className="hidden md:block w-full h-full">
+                  <div {...revealProps(1, "hidden md:block w-full h-full")}>
                     <SmoothImg
                       src="/me.png"
                       alt="vacation!"
@@ -104,10 +107,17 @@ export default function About() {
                   </div>
                   <div className="flex items-center">
                     <div className="flex flex-col gap-2">
-                      <div className="font-semibold text-3xl text-gray-700">
+                      <div
+                        {...revealProps(2, "font-semibold text-3xl text-gray-700")}
+                      >
                         Hi, I'm Megan
                       </div>
-                      <div className="text-wrap:balance text-gray-700 pr-4 sm:pr-0">
+                      <div
+                        {...revealProps(
+                          3,
+                          "text-wrap:balance text-gray-700 pr-4 sm:pr-0",
+                        )}
+                      >
                         I'm an engineering student at the{" "}
                         <FancyLink href="https://uwaterloo.ca">
                           University of Waterloo
@@ -123,7 +133,12 @@ export default function About() {
                         . I am also an avid puzzle builder!
                       </div>
                       <div className="flex justify-start items-center">
-                        <div className="text-gray-400 hdmmdidden md:block pb-1">
+                        <div
+                          {...revealProps(
+                            4,
+                            "text-gray-400 hdmmdidden md:block pb-1",
+                          )}
+                        >
                           {" "}
                           ------8&lt;------
                           <span className="hidden lg:inline">----</span>[{" "}
@@ -143,7 +158,12 @@ export default function About() {
                   </div>
                 </div>
                 {/* TODO: make this a reusable component? */}
-                <div className="flex flex-col items-end gap-1 md:pt-12 md:pt-0 text-gray-700">
+                <div
+                  {...revealProps(
+                    5,
+                    "flex flex-col items-end gap-1 md:pt-12 md:pt-0 text-gray-700",
+                  )}
+                >
                   <div>
                     <Link href="https://www.linkedin.com/in/megan-bx-wu/">
                       Linkedin
@@ -161,8 +181,12 @@ export default function About() {
           </div>
           <div className="pt-4 pb-8">
             <dl className="space-y-4 divide-y divide-gray-900/10">
-              {experience.map((experience) => (
-                <Disclosure as="div" key={experience.title} className="pt-6">
+              {experience.map((experience, index) => (
+                <Disclosure
+                  as="div"
+                  key={experience.title}
+                  {...revealProps(6 + index * 0.5, "pt-6")}
+                >
                   {({ open }) => (
                     <>
                       <dt>

@@ -3,7 +3,8 @@ import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { SmoothImg } from "../components/SmoothImage";
+import { SmoothNextImage } from "../components/SmoothImage";
+import { Reveal, revealProps } from "../components/Reveal";
 
 const projects = [
   {
@@ -75,20 +76,33 @@ export default function Portfolio() {
     <div className="min-h-screen bg-cover bg-center overflow-auto">
       <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb page="portfolio" from={from as string | undefined} />
-          <div className="flex justify-center items-center pb-8 text-gray-500">
+          <Reveal index={0}>
+            <Breadcrumb page="portfolio" from={from as string | undefined} />
+          </Reveal>
+          <div
+            {...revealProps(
+              1,
+              "flex justify-center items-center pb-8 text-gray-500",
+            )}
+          >
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
               return (
-                <div key={project.id} className="group flex flex-col">
+                <div
+                  key={project.id}
+                  {...revealProps(2 + index * 1.2, "group flex flex-col")}
+                >
                   <div className="relative w-full h-48 sm:h-36 bg-muted overflow-hidden">
-                    <SmoothImg
-                      src={project.src}
+                    <SmoothNextImage
+                      src={`/${project.src}`}
                       alt={project.title}
-                      containerClassName="w-full h-full"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      fill
+                      sizes="(max-width: 640px) 100vw, 240px"
+                      priority={index < 3}
+                      containerClassName="h-full"
+                      className="object-cover group-hover:scale-105 transition-transform"
                     />
 
                     {/* Hover overlay content */}

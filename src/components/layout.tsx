@@ -1,5 +1,5 @@
 import Footer from "./footer";
-import { PageTransition } from "./PageTransition";
+import { Reveal } from "./Reveal";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -8,11 +8,10 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <PageTransition>
-        <main className="pb-24">{children}</main>
-      </PageTransition>
-      <Footer />
+      <main className="pb-24">{children}</main>
+      <Reveal index={8}>
+        <Footer />
+      </Reveal>
     </>
   );
 }
-

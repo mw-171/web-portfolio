@@ -2,6 +2,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { useRouter } from "next/router";
 import { images } from "../lib/art";
 import { SmoothNextImage } from "../components/SmoothImage";
+import { Reveal, revealProps } from "../components/Reveal";
 
 export default function Portfolio() {
   const router = useRouter();
@@ -15,8 +16,15 @@ export default function Portfolio() {
     <div className="min-h-screen bg-cover bg-center overflow-auto">
       <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb page="art" from={from as string | undefined} />
-          <div className="flex justify-center items-center pb-8 text-gray-500">
+          <Reveal index={0}>
+            <Breadcrumb page="art" from={from as string | undefined} />
+          </Reveal>
+          <div
+            {...revealProps(
+              1,
+              "flex justify-center items-center pb-8 text-gray-500",
+            )}
+          >
             <span>
               a collection of my{" "}
               <span className="serif-font italic">
@@ -32,10 +40,13 @@ export default function Portfolio() {
             </span>
           </div>
           <div className="columns-2 sm:columns-3 gap-4 space-y-4">
-            {images.map((image) => (
+            {images.map((image, index) => (
               <div
                 key={image.title}
-                className="break-inside-avoid mb-4 relative active:bg-black"
+                {...revealProps(
+                  2 + index * 0.6,
+                  "break-inside-avoid mb-4 relative active:bg-black",
+                )}
               >
                 <a
                   href={`/art/${encodeURIComponent(image.title || "untitled")}${fromParam}`}

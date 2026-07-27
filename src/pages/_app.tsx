@@ -12,4 +12,3 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 };
 
 export default MyApp;
-

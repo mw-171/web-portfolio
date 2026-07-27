@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { images } from "../../lib/art";
 import { ImageType } from "../../types/types";
 import { SmoothImg } from "../../components/SmoothImage";
+import { Reveal, revealProps } from "../../components/Reveal";
 // breadcrumb generator used by the Breadcrumb component; not needed directly here
 
 export default function Title() {
@@ -49,10 +50,12 @@ export default function Title() {
     <div className="h-screen">
       <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
-          <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
+          <Reveal index={0}>
+            <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
+          </Reveal>
           {/* TODO: consider making this a modal instead - use this logic for projects */}
           <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
-            <div className="md:w-1/2 flex items-center justify-end">
+            <div {...revealProps(1, "md:w-1/2 flex items-center justify-end")}>
               <SmoothImg
                 src={image?.src}
                 alt={image?.alt}
@@ -60,9 +63,9 @@ export default function Title() {
               />
             </div>
             <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
-              <div className="font-semibold">{title}</div>
-              <div className="italic">{image?.media}</div>
-              <div className="">{image?.date}</div>
+              <div {...revealProps(2, "font-semibold")}>{title}</div>
+              <div {...revealProps(3, "italic")}>{image?.media}</div>
+              <div {...revealProps(4)}>{image?.date}</div>
             </div>
           </div>
         </div>

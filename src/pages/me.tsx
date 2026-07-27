@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Breadcrumb from "../components/Breadcrumb";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import { images } from "../lib/bereals";
+import { Reveal, revealProps } from "../components/Reveal";
 
 export default function Me() {
   const router = useRouter();
@@ -12,15 +12,6 @@ export default function Me() {
     ? router.query.from[0]
     : router.query.from;
 
-
-  const [isVisible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setVisible(true);
-    return () => {
-      setVisible(false);
-    };
-  }, []);
   //TODO: add grid of videos/bereals/travel photos
   return (
     <>
@@ -48,27 +39,35 @@ export default function Me() {
         </div>
       </div>
       <div className="pt-8 px-4 mx-auto max-w-[720px] flex justify-center flex-col ">
-        <Breadcrumb page="me" from={from as string | undefined} listClassName="md:pl-4" />
+        <Reveal index={0}>
+          <Breadcrumb page="me" from={from as string | undefined} listClassName="md:pl-4" />
+        </Reveal>
 
         <div className="mt-8 sm:mt-16 flex items-center justify-center flex-col ">
           <div
-            className={`text-4xl text-center text-gray-700 font-semibold z-20 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+            {...revealProps(
+              1,
+              "text-4xl text-center text-gray-700 font-semibold z-20",
+            )}
           >
             hi there!
           </div>
-          <div
-            className={`pt-4 text-gray-700 transition-opacity duration-150000 ${isVisible ? "opacity-100" : "opacity-0"}`}
-          >
+          <div {...revealProps(2, "pt-4 text-gray-700")}>
             you've discovered an easter egg 🐣(wip)
           </div>
         </div>
         <div className="pt-12 md:pt-48 flex items-center sm:items-start justify-center flex-col">
-          <div className="text-xl text-gray-700 font-semibold z-20">
+          <div {...revealProps(3, "text-xl text-gray-700 font-semibold z-20")}>
             here's a peek into my daily life!
           </div>
         </div>
       </div>
-      <div className="h-[20rem] sm:h-[20rem] mb-8 rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
+      <div
+        {...revealProps(
+          4,
+          "h-[20rem] sm:h-[20rem] mb-8 rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden",
+        )}
+      >
         <InfiniteMovingCards images={images} direction="right" speed="normal" />
       </div>
     </>
