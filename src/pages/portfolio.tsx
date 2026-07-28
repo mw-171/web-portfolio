@@ -82,7 +82,7 @@ export default function Portfolio() {
           <div
             {...revealProps(
               1,
-              "flex justify-center items-center pb-8 text-gray-500",
+              "flex justify-center items-center pb-8 text-gray-500 cursor-default",
             )}
           >
             <span>a glimpse into some of my work ⊹ ࣪ ˖</span>
@@ -92,7 +92,10 @@ export default function Portfolio() {
               return (
                 <div
                   key={project.id}
-                  {...revealProps(2 + index * 1.2, "group flex flex-col")}
+                  {...revealProps(
+                    2 + index * 1.2,
+                    "group flex flex-col cursor-default",
+                  )}
                 >
                   <div className="relative w-full h-48 sm:h-36 bg-muted overflow-hidden">
                     <SmoothNextImage
@@ -107,32 +110,13 @@ export default function Portfolio() {
 
                     {/* Hover overlay content */}
                     <div className="absolute inset-0 bg-gray-800 bg-opacity-75 transition-opacity duration-300 flex flex-col justify-end py-3 px-4 sm:px-3 opacity-0 group-hover:opacity-100">
-                      <p className="text-xs text-gray-300 mb-2 line-clamp-2 pr-24 sm:pr-0">
-                        {project.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-1 mb-2">
-                        {project.technologies.slice(0, 3).map((tech: any) => (
-                          <span
-                            key={tech}
-                            className="inline-block px-1.5 py-0.5 text-gray-300 text-xs rounded bg-gray-800 bg-opacity-50"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                        {project.technologies.length > 3 && (
-                          <span className="inline-block px-1.5 py-0.5 text-gray-300 text-xs">
-                            +{project.technologies.length - 3}
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="flex gap-2 items-center">
+                      <div className="flex gap-3 items-center mb-1">
                         {project.github ? (
                           <a
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={`${project.title} on GitHub`}
                           >
                             <FontAwesomeIcon
                               icon={faGithub}
@@ -144,6 +128,7 @@ export default function Portfolio() {
                           href={project.website}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`Visit ${project.title}`}
                         >
                           <FontAwesomeIcon
                             icon={faArrowUpRightFromSquare}
@@ -151,6 +136,10 @@ export default function Portfolio() {
                           />
                         </a>
                       </div>
+
+                      <p className="text-xs text-gray-300 line-clamp-2 pr-24 sm:pr-0">
+                        {project.description}
+                      </p>
                     </div>
                   </div>
 
