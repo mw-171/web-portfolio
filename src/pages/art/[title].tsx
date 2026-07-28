@@ -1,71 +1,41 @@
 import Breadcrumb from "../../components/Breadcrumb";
-import { useRouter } from "next/router";
-import LoadingSpinner from "../../components/loadingSpinner";
-import { useEffect, useState } from "react";
+import type { GetServerSideProps } from "next";
 import { images } from "../../lib/art";
 import { ImageType } from "../../types/types";
 import { SmoothImg } from "../../components/SmoothImage";
 import { Reveal, revealProps } from "../../components/Reveal";
-// breadcrumb generator used by the Breadcrumb component; not needed directly here
 
-export default function Title() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [image, setImage] = useState<ImageType | null>(null);
-  const router = useRouter();
-  let title: string | undefined;
+type Props = {
+  image: ImageType;
+  title: string;
+  from: string | null;
+};
 
-  if (typeof router.query.title === "string") {
-    title = router.query.title;
-  } else if (Array.isArray(router.query.title)) {
-    title = router.query.title[0];
-  }
-
-  const from = Array.isArray(router.query.from)
-    ? router.query.from[0]
-    : router.query.from;
-
-  // Breadcrumb will compute items when given page hint and title
-  // this keeps page files minimal and avoids duplicating arrays
-
-  useEffect(() => {
-    const fetchImage = async () => {
-      const img = await images.find((img) => img.title === title);
-      if (img) {
-        setImage(img);
-        setIsLoading(false);
-      }
-    };
-    fetchImage();
-  }, [title]);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center font-semibold text-2xl py-64">
-        <LoadingSpinner />
-      </div>
-    );
-  }
-
+export default function Title({ image, title, from }: Props) {
   return (
     <div className="h-screen">
       <div className="pt-8">
         <div className="mx-auto max-w-[720px] px-4">
           <Reveal index={0}>
-            <Breadcrumb page="artDetail" title={title} from={from as string | undefined} />
+            <Breadcrumb
+              page="artDetail"
+              title={title}
+              from={from ?? undefined}
+            />
           </Reveal>
           {/* TODO: consider making this a modal instead - use this logic for projects */}
           <div className="flex flex-col md:flex-row justify-center items-center pt-2 gap-8">
             <div {...revealProps(1, "md:w-1/2 flex items-center justify-end")}>
               <SmoothImg
-                src={image?.src}
-                alt={image?.alt}
+                src={image.src}
+                alt={image.alt}
                 className="h-auto rounded shadow-md active:opacity-60 max-h-[500px]"
               />
             </div>
             <div className="md:w-1/4 flex flex-col text-center sm:text-left  justify-start gap-4 text-gray-600">
               <div {...revealProps(2, "font-semibold")}>{title}</div>
-              <div {...revealProps(3, "italic")}>{image?.media}</div>
-              <div {...revealProps(4)}>{image?.date}</div>
+              <div {...revealProps(3, "italic")}>{image.media}</div>
+              <div {...revealProps(4)}>{image.date}</div>
             </div>
           </div>
         </div>
@@ -74,3 +44,23 @@ export default function Title() {
   );
 }
 
+// resolving the artwork on the server puts it in the html, so the reveal
+// cascade starts at first paint like every other page — client-side lookup
+// meant it couldn't start until hydration finished
+export const getServerSideProps: GetServerSideProps<Props> = async ({
+  params,
+  query,
+}) => {
+  const rawTitle = params?.title;
+  const title = Array.isArray(rawTitle) ? rawTitle[0] : rawTitle;
+  const image = images.find((img) => img.title === title);
+
+  if (!title || !image) {
+    return { notFound: true };
+  }
+
+  const rawFrom = query.from;
+  const from = (Array.isArray(rawFrom) ? rawFrom[0] : rawFrom) ?? null;
+
+  return { props: { image, title, from } };
+};
