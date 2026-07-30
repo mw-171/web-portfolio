@@ -14,6 +14,13 @@ export const images = [
     media: "procreate",
   },
   {
+    src: "/art/Desk.JPG",
+    alt: "desk",
+    title: "desk still life",
+    date: "04/10/2026",
+    media: "procreate",
+  },
+  {
     src: "/art/makicrop.jpg",
     alt: "maki",
     title: "maki from jjk",
@@ -64,14 +71,6 @@ export const images = [
     date: "09/02/2022",
     media: "prismacolour pencil crayons",
   },
- 
-  {
-    src: "/art/11sketch.JPG",
-    alt: "sketch 11",
-    title: "page 11 of my sketchbook",
-    date: "03/20/2024",
-    media: "ink pens!",
-  },
 
   {
     src: "/art/torontotownhouse.JPG",
@@ -79,6 +78,20 @@ export const images = [
     title: "toronto townhouse",
     date: "09/22/2025",
     media: "procreate",
+  },
+  {
+    src: "/art/Nikki.JPG",
+    alt: "nikki",
+    title: "nikki from obsession",
+    date: "06/30/2026",
+    media: "procreate",
+  },
+  {
+    src: "/art/11sketch.JPG",
+    alt: "sketch 11",
+    title: "page 11 of my sketchbook",
+    date: "03/20/2024",
+    media: "ink pens!",
   },
   {
     src: "/art/yearbookcover.jpg",
@@ -124,7 +137,7 @@ export const images = [
     media: "colour pencils",
   },
 
-    {
+  {
     src: "/art/Space_debris.jpg",
     alt: "space debris",
     title: "space debris advocacy poster",
@@ -140,8 +153,7 @@ export const images = [
     media: "winsor newton watercolour",
   },
 
-
- {
+  {
     src: "/art/gold.jpeg",
     alt: "gold",
     title: "gold",
