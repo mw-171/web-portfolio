@@ -20,20 +20,14 @@ const projects = [
   },
   {
     id: 2,
-    title: "VoCal",
-    src: "vocalmockup.png",
-    caption: "AI voice-to-text scheduling",
-    description: "Simplify creating calendar events",
-    technologies: [
-      "TypeScript",
-      "Whisper",
-      "Google OAuth",
-      "Next.js",
-      "Tailwind",
-    ],
-    github: "https://github.com/mw-171/VoCal",
-    website: "https://myvocal.ca/",
+    title: "Split",
+    src: "split.png",
+    caption: "Expense splitting app",
+    description: "Easily track expenses and collect debts amongst friends 💸",
+    technologies: ["TypeScript", "Prisma"],
+    website: "https://split-0.vercel.app/",
   },
+
   {
     id: 3,
     title: "Sparks",
@@ -57,12 +51,19 @@ const projects = [
   },
   {
     id: 5,
-    title: "Split",
-    src: "split.png",
-    caption: "Expense splitting app",
-    description: "Easily track expenses and collect debts amongst friends 💸",
-    technologies: ["TypeScript", "Prisma"],
-    website: "https://split-0.vercel.app/",
+    title: "VoCal",
+    src: "vocalmockup.png",
+    caption: "AI voice-to-text scheduling",
+    description: "Simplify creating calendar events",
+    technologies: [
+      "TypeScript",
+      "Whisper",
+      "Google OAuth",
+      "Next.js",
+      "Tailwind",
+    ],
+    github: "https://github.com/mw-171/VoCal",
+    website: "https://myvocal.ca/",
   },
 ];
 
