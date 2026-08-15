@@ -82,7 +82,7 @@ export const images = [
   {
     src: "/art/Nikki.JPG",
     alt: "nikki",
-    title: "nikki from obsession",
+    title: "nikki from obsession the movie",
     date: "06/30/2026",
     media: "procreate",
   },
