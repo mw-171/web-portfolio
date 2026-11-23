@@ -1,0 +1,19 @@
+AGENTS.md
+  s_87ffd6e5e36ac4::t_ad6d32c53d2942 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3a1ab650b30b40beec04c602308249d74727ec15",
+  "prompts": {},
+  "sessions": {
+    "s_87ffd6e5e36ac4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bd8fcd8b-4f28-42f4-9993-6686c47474ce",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "meganwu <meganbxwu@gmail.com>"
+    }
+  }
+}
