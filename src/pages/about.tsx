@@ -16,6 +16,16 @@ export default function About() {
 
   const experience = [
     {
+      title: "Software Engineer Intern",
+      date: "Sept 2026 - Present",
+      description: (
+        <>
+          Tinkering at <Link href="https://roze.ai/">roze.ai</Link>
+        </>
+      ),
+      company: "Roze",
+    },
+    {
       title: "Member of Technical Staff",
       date: "Jan 2026 - Apr 2026",
       description: (
